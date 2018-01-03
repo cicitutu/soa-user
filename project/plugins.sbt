@@ -1,0 +1,1 @@
+addSbtPlugin("com.isuwang" % "sbt-dapeng" % "0.1-SNAPSHOT")

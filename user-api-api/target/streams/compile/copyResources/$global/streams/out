@@ -1,0 +1,8 @@
+[debug] Copy resource mappings: 
+[debug] 	(H:\IdeaProjects\userDemo\user-api\user-api-api\src\main\resources\com.today.api.user.service.UserService.xml,H:\IdeaProjects\userDemo\user-api\user-api-api\target\scala-2.12\classes\com.today.api.user.service.UserService.xml)
+[debug] 	(H:\IdeaProjects\userDemo\user-api\user-api-api\src\main\resources\thrifts,H:\IdeaProjects\userDemo\user-api\user-api-api\target\scala-2.12\classes\thrifts)
+[debug] 	(H:\IdeaProjects\userDemo\user-api\user-api-api\src\main\resources\thrifts\common_domain.thrift,H:\IdeaProjects\userDemo\user-api\user-api-api\target\scala-2.12\classes\thrifts\common_domain.thrift)
+[debug] 	(H:\IdeaProjects\userDemo\user-api\user-api-api\src\main\resources\thrifts\user_enum.thrift,H:\IdeaProjects\userDemo\user-api\user-api-api\target\scala-2.12\classes\thrifts\user_enum.thrift)
+[debug] 	(H:\IdeaProjects\userDemo\user-api\user-api-api\src\main\resources\thrifts\user_request.thrift,H:\IdeaProjects\userDemo\user-api\user-api-api\target\scala-2.12\classes\thrifts\user_request.thrift)
+[debug] 	(H:\IdeaProjects\userDemo\user-api\user-api-api\src\main\resources\thrifts\user_response.thrift,H:\IdeaProjects\userDemo\user-api\user-api-api\target\scala-2.12\classes\thrifts\user_response.thrift)
+[debug] 	(H:\IdeaProjects\userDemo\user-api\user-api-api\src\main\resources\thrifts\user_service.thrift,H:\IdeaProjects\userDemo\user-api\user-api-api\target\scala-2.12\classes\thrifts\user_service.thrift)

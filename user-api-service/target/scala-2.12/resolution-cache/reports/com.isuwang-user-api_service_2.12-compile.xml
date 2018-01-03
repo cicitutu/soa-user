@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="com.isuwang"
+		module="user-api_service_2.12"
+		revision="0.1-SNAPSHOT"
+		conf="compile"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20180103163928"/>
+	<dependencies>
+		<module organisation="com.alibaba" name="druid">
+			<revision name="1.0.17" status="release" pubdate="20160503170402" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/alibaba/druid" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="34">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="9187" time="0" location="C:\Users\tys\.ivy2\cache\com.alibaba\druid\ivy-1.0.17.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/com/alibaba/druid/1.0.17/druid-1.0.17.pom"/>
+				<caller organisation="com.isuwang" name="user-api_service_2.12" conf="compile" rev="1.0.17" rev-constraint-default="1.0.17" rev-constraint-dynamic="1.0.17" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="druid" type="jar" ext="jar" status="no" details="" size="2055419" time="0" location="C:\Users\tys\.ivy2\cache\com.alibaba\druid\jars\druid-1.0.17.jar">
+						<origin-location is-local="false" location="http://maven.aliyun.com/nexus/content/groups/public/com/alibaba/druid/1.0.17/druid-1.0.17.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="mysql" name="mysql-connector-java">
+			<revision name="5.1.36" status="release" pubdate="20160503170450" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://dev.mysql.com/doc/connector-j/en/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="33">
+				<license name="The GNU General Public License, Version 2" url="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2568" time="0" location="C:\Users\tys\.ivy2\cache\mysql\mysql-connector-java\ivy-5.1.36.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/mysql/mysql-connector-java/5.1.36/mysql-connector-java-5.1.36.pom"/>
+				<caller organisation="com.isuwang" name="user-api_service_2.12" conf="compile" rev="5.1.36" rev-constraint-default="5.1.36" rev-constraint-dynamic="5.1.36" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="mysql-connector-java" type="jar" ext="jar" status="no" details="" size="972007" time="0" location="C:\Users\tys\.ivy2\cache\mysql\mysql-connector-java\jars\mysql-connector-java-5.1.36.jar">
+						<origin-location is-local="false" location="http://maven.aliyun.com/nexus/content/groups/public/mysql/mysql-connector-java/5.1.36/mysql-connector-java-5.1.36.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.12.2" status="release" pubdate="20170413161812" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.2/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="30">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2860" time="0" location="C:\Users\tys\.ivy2\cache\org.scala-lang\scala-reflect\ivy-2.12.2.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/scala-lang/scala-reflect/2.12.2/scala-reflect-2.12.2.pom"/>
+				<caller organisation="com.github.wangzaixiang" name="scala-sql_2.12" conf="default, compile, runtime, master" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="2.0.0"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3553181" time="0" location="C:\Users\tys\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.12.2.jar">
+						<origin-location is-local="false" location="http://maven.aliyun.com/nexus/content/groups/public/org/scala-lang/scala-reflect/2.12.2/scala-reflect-2.12.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.wangzaixiang" name="scala-sql_2.12">
+			<revision name="2.0.0" status="release" pubdate="20170829091833" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/wangzaixiang/scala-sql" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="29">
+				<license name="BSD-style" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="3462" time="0" location="C:\Users\tys\.ivy2\cache\com.github.wangzaixiang\scala-sql_2.12\ivy-2.0.0.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/com/github/wangzaixiang/scala-sql_2.12/2.0.0/scala-sql_2.12-2.0.0.pom"/>
+				<caller organisation="com.isuwang" name="user-api_service_2.12" conf="compile" rev="2.0.0" rev-constraint-default="2.0.0" rev-constraint-dynamic="2.0.0" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scala-sql_2.12" type="jar" ext="jar" status="no" details="" size="139409" time="0" location="C:\Users\tys\.ivy2\cache\com.github.wangzaixiang\scala-sql_2.12\jars\scala-sql_2.12-2.0.0.jar">
+						<origin-location is-local="false" location="http://maven.aliyun.com/nexus/content/groups/public/com/github/wangzaixiang/scala-sql_2.12/2.0.0/scala-sql_2.12-2.0.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.isuwang" name="dapeng-spring">
+			<revision name="1.3.0" status="release" pubdate="20171207151511" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="20">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5413" time="0" location="C:\Users\tys\.ivy2\cache\com.isuwang\dapeng-spring\ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="http://nexus.oa.isuwang.com/repository/maven-public/com/isuwang/dapeng-spring/1.3.0/dapeng-spring-1.3.0.pom"/>
+				<caller organisation="com.isuwang" name="user-api_service_2.12" conf="compile" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="dapeng-spring" type="jar" ext="jar" status="no" details="" size="6631" time="0" location="C:\Users\tys\.ivy2\cache\com.isuwang\dapeng-spring\jars\dapeng-spring-1.3.0.jar">
+						<origin-location is-local="false" location="http://nexus.oa.isuwang.com/repository/maven-public/com/isuwang/dapeng-spring/1.3.0/dapeng-spring-1.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-lang3">
+			<revision name="3.1" status="release" pubdate="20160503170554" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/lang/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="8108" time="0" location="C:\Users\tys\.ivy2\cache\org.apache.commons\commons-lang3\ivy-3.1.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.pom"/>
+				<caller organisation="com.isuwang" name="dapeng-spring" conf="default, compile, runtime, master" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="1.3.0"/>
+				<artifacts>
+					<artifact name="commons-lang3" type="jar" ext="jar" status="no" details="" size="315805" time="0" location="C:\Users\tys\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar">
+						<origin-location is-local="false" location="http://maven.aliyun.com/nexus/content/groups/public/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.springframework" name="spring-context">
+			<revision name="4.2.4.RELEASE" status="release" pubdate="20160503170501" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spring-projects/spring-framework" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="21">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4921" time="0" location="C:\Users\tys\.ivy2\cache\org.springframework\spring-context\ivy-4.2.4.RELEASE.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/springframework/spring-context/4.2.4.RELEASE/spring-context-4.2.4.RELEASE.pom"/>
+				<caller organisation="com.isuwang" name="user-api_service_2.12" conf="compile" rev="4.2.4.RELEASE" rev-constraint-default="4.2.4.RELEASE" rev-constraint-dynamic="4.2.4.RELEASE" callerrev="0.1-SNAPSHOT"/>
+				<caller organisation="com.isuwang" name="dapeng-spring" conf="default, compile, runtime, master" rev="4.2.4.RELEASE" rev-constraint-default="4.2.4.RELEASE" rev-constraint-dynamic="4.2.4.RELEASE" callerrev="1.3.0"/>
+				<artifacts>
+					<artifact name="spring-context" type="jar" ext="jar" status="no" details="" size="1097552" time="0" location="C:\Users\tys\.ivy2\cache\org.springframework\spring-context\jars\spring-context-4.2.4.RELEASE.jar">
+						<origin-location is-local="false" location="http://maven.aliyun.com/nexus/content/groups/public/org/springframework/spring-context/4.2.4.RELEASE/spring-context-4.2.4.RELEASE.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.springframework" name="spring-expression">
+			<revision name="4.2.4.RELEASE" status="release" pubdate="20160503170505" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spring-projects/spring-framework" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="27">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2788" time="0" location="C:\Users\tys\.ivy2\cache\org.springframework\spring-expression\ivy-4.2.4.RELEASE.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/springframework/spring-expression/4.2.4.RELEASE/spring-expression-4.2.4.RELEASE.pom"/>
+				<caller organisation="org.springframework" name="spring-context" conf="compile, runtime" rev="4.2.4.RELEASE" rev-constraint-default="4.2.4.RELEASE" rev-constraint-dynamic="4.2.4.RELEASE" callerrev="4.2.4.RELEASE"/>
+				<artifacts>
+					<artifact name="spring-expression" type="jar" ext="jar" status="no" details="" size="262990" time="0" location="C:\Users\tys\.ivy2\cache\org.springframework\spring-expression\jars\spring-expression-4.2.4.RELEASE.jar">
+						<origin-location is-local="false" location="http://maven.aliyun.com/nexus/content/groups/public/org/springframework/spring-expression/4.2.4.RELEASE/spring-expression-4.2.4.RELEASE.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.springframework" name="spring-aop">
+			<revision name="4.2.4.RELEASE" status="release" pubdate="20160503170504" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spring-projects/spring-framework" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3547" time="0" location="C:\Users\tys\.ivy2\cache\org.springframework\spring-aop\ivy-4.2.4.RELEASE.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/springframework/spring-aop/4.2.4.RELEASE/spring-aop-4.2.4.RELEASE.pom"/>
+				<caller organisation="org.springframework" name="spring-context" conf="compile, runtime" rev="4.2.4.RELEASE" rev-constraint-default="4.2.4.RELEASE" rev-constraint-dynamic="4.2.4.RELEASE" callerrev="4.2.4.RELEASE"/>
+				<artifacts>
+					<artifact name="spring-aop" type="jar" ext="jar" status="no" details="" size="370051" time="0" location="C:\Users\tys\.ivy2\cache\org.springframework\spring-aop\jars\spring-aop-4.2.4.RELEASE.jar">
+						<origin-location is-local="false" location="http://maven.aliyun.com/nexus/content/groups/public/org/springframework/spring-aop/4.2.4.RELEASE/spring-aop-4.2.4.RELEASE.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.springframework" name="spring-beans">
+			<revision name="4.2.4.RELEASE" status="release" pubdate="20160503170502" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spring-projects/spring-framework" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="24">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3246" time="0" location="C:\Users\tys\.ivy2\cache\org.springframework\spring-beans\ivy-4.2.4.RELEASE.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/springframework/spring-beans/4.2.4.RELEASE/spring-beans-4.2.4.RELEASE.pom"/>
+				<caller organisation="org.springframework" name="spring-context" conf="compile, runtime" rev="4.2.4.RELEASE" rev-constraint-default="4.2.4.RELEASE" rev-constraint-dynamic="4.2.4.RELEASE" callerrev="4.2.4.RELEASE"/>
+				<caller organisation="org.springframework" name="spring-aop" conf="compile, runtime" rev="4.2.4.RELEASE" rev-constraint-default="4.2.4.RELEASE" rev-constraint-dynamic="4.2.4.RELEASE" callerrev="4.2.4.RELEASE"/>
+				<artifacts>
+					<artifact name="spring-beans" type="jar" ext="jar" status="no" details="" size="731512" time="0" location="C:\Users\tys\.ivy2\cache\org.springframework\spring-beans\jars\spring-beans-4.2.4.RELEASE.jar">
+						<origin-location is-local="false" location="http://maven.aliyun.com/nexus/content/groups/public/org/springframework/spring-beans/4.2.4.RELEASE/spring-beans-4.2.4.RELEASE.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.springframework" name="spring-core">
+			<revision name="4.2.4.RELEASE" status="release" pubdate="20160503170501" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spring-projects/spring-framework" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3235" time="0" location="C:\Users\tys\.ivy2\cache\org.springframework\spring-core\ivy-4.2.4.RELEASE.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/springframework/spring-core/4.2.4.RELEASE/spring-core-4.2.4.RELEASE.pom"/>
+				<caller organisation="org.springframework" name="spring-expression" conf="compile, runtime" rev="4.2.4.RELEASE" rev-constraint-default="4.2.4.RELEASE" rev-constraint-dynamic="4.2.4.RELEASE" callerrev="4.2.4.RELEASE"/>
+				<caller organisation="org.springframework" name="spring-beans" conf="compile, runtime" rev="4.2.4.RELEASE" rev-constraint-default="4.2.4.RELEASE" rev-constraint-dynamic="4.2.4.RELEASE" callerrev="4.2.4.RELEASE"/>
+				<caller organisation="org.springframework" name="spring-context" conf="compile, runtime" rev="4.2.4.RELEASE" rev-constraint-default="4.2.4.RELEASE" rev-constraint-dynamic="4.2.4.RELEASE" callerrev="4.2.4.RELEASE"/>
+				<caller organisation="org.springframework" name="spring-aop" conf="compile, runtime" rev="4.2.4.RELEASE" rev-constraint-default="4.2.4.RELEASE" rev-constraint-dynamic="4.2.4.RELEASE" callerrev="4.2.4.RELEASE"/>
+				<artifacts>
+					<artifact name="spring-core" type="jar" ext="jar" status="no" details="" size="1078737" time="0" location="C:\Users\tys\.ivy2\cache\org.springframework\spring-core\jars\spring-core-4.2.4.RELEASE.jar">
+						<origin-location is-local="false" location="http://maven.aliyun.com/nexus/content/groups/public/org/springframework/spring-core/4.2.4.RELEASE/spring-core-4.2.4.RELEASE.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="aopalliance" name="aopalliance">
+			<revision name="1.0" status="release" pubdate="20160503170357" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://aopalliance.sourceforge.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
+				<license name="Public Domain"/>
+				<metadata-artifact status="no" details="" size="2447" time="0" location="C:\Users\tys\.ivy2\cache\aopalliance\aopalliance\ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/aopalliance/aopalliance/1.0/aopalliance-1.0.pom"/>
+				<caller organisation="org.springframework" name="spring-aop" conf="compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="4.2.4.RELEASE"/>
+				<artifacts>
+					<artifact name="aopalliance" type="jar" ext="jar" status="no" details="" size="4467" time="0" location="C:\Users\tys\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar">
+						<origin-location is-local="false" location="http://maven.aliyun.com/nexus/content/groups/public/aopalliance/aopalliance/1.0/aopalliance-1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.isuwang" name="user-api-api_2.12">
+			<revision name="0.1-SNAPSHOT" status="integration" pubdate="20180103163927" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
+				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
+				<caller organisation="com.isuwang" name="user-api_service_2.12" conf="compile" rev="0.1-SNAPSHOT" rev-constraint-default="0.1-SNAPSHOT" rev-constraint-dynamic="0.1-SNAPSHOT" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.isuwang" name="dapeng-registry-zookeeper">
+			<revision name="1.3.0" status="release" pubdate="20171207151337" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="15">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6138" time="0" location="C:\Users\tys\.ivy2\cache\com.isuwang\dapeng-registry-zookeeper\ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="http://nexus.oa.isuwang.com/repository/maven-public/com/isuwang/dapeng-registry-zookeeper/1.3.0/dapeng-registry-zookeeper-1.3.0.pom"/>
+				<caller organisation="com.isuwang" name="user-api_service_2.12" conf="compile" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="0.1-SNAPSHOT"/>
+				<caller organisation="com.isuwang" name="user-api-api_2.12" conf="compile" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="dapeng-registry-zookeeper" type="jar" ext="jar" status="no" details="" size="23497" time="0" location="C:\Users\tys\.ivy2\cache\com.isuwang\dapeng-registry-zookeeper\jars\dapeng-registry-zookeeper-1.3.0.jar">
+						<origin-location is-local="false" location="http://nexus.oa.isuwang.com/repository/maven-public/com/isuwang/dapeng-registry-zookeeper/1.3.0/dapeng-registry-zookeeper-1.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-classic">
+			<revision name="1.1.3" status="release" pubdate="20160503170358" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="18">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="10120" time="0" location="C:\Users\tys\.ivy2\cache\ch.qos.logback\logback-classic\ivy-1.1.3.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.pom"/>
+				<caller organisation="com.isuwang" name="user-api_service_2.12" conf="compile" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="0.1-SNAPSHOT"/>
+				<caller organisation="com.isuwang" name="dapeng-registry-zookeeper" conf="default, compile, runtime, master" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="1.3.0"/>
+				<artifacts>
+					<artifact name="logback-classic" type="jar" ext="jar" status="no" details="" size="280928" time="0" location="C:\Users\tys\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar">
+						<origin-location is-local="false" location="http://maven.aliyun.com/nexus/content/groups/public/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-core">
+			<revision name="1.1.3" status="release" pubdate="20160503170358" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="19">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="7751" time="0" location="C:\Users\tys\.ivy2\cache\ch.qos.logback\logback-core\ivy-1.1.3.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.pom"/>
+				<caller organisation="com.isuwang" name="user-api_service_2.12" conf="compile" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="0.1-SNAPSHOT"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="1.1.3"/>
+				<caller organisation="com.isuwang" name="dapeng-registry-zookeeper" conf="default, compile, runtime, master" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="1.3.0"/>
+				<artifacts>
+					<artifact name="logback-core" type="jar" ext="jar" status="no" details="" size="455041" time="0" location="C:\Users\tys\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar">
+						<origin-location is-local="false" location="http://maven.aliyun.com/nexus/content/groups/public/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.janino" name="janino">
+			<revision name="2.7.8" status="release" pubdate="20160503170644" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="31">
+				<license name="New BSD License" url="http://dist.codehaus.org/janino/new_bsd_license.txt"/>
+				<metadata-artifact status="no" details="" size="5069" time="0" location="C:\Users\tys\.ivy2\cache\org.codehaus.janino\janino\ivy-2.7.8.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/codehaus/janino/janino/2.7.8/janino-2.7.8.pom"/>
+				<caller organisation="com.isuwang" name="user-api_service_2.12" conf="compile" rev="2.7.8" rev-constraint-default="2.7.8" rev-constraint-dynamic="2.7.8" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="janino" type="jar" ext="jar" status="no" details="" size="613299" time="0" location="C:\Users\tys\.ivy2\cache\org.codehaus.janino\janino\jars\janino-2.7.8.jar">
+						<origin-location is-local="false" location="http://maven.aliyun.com/nexus/content/groups/public/org/codehaus/janino/janino/2.7.8/janino-2.7.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.janino" name="commons-compiler">
+			<revision name="2.7.8" status="release" pubdate="20160503170644" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="32">
+				<license name="New BSD License" url="http://dist.codehaus.org/janino/new_bsd_license.txt"/>
+				<metadata-artifact status="no" details="" size="4809" time="0" location="C:\Users\tys\.ivy2\cache\org.codehaus.janino\commons-compiler\ivy-2.7.8.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/codehaus/janino/commons-compiler/2.7.8/commons-compiler-2.7.8.pom"/>
+				<caller organisation="org.codehaus.janino" name="janino" conf="default, compile, runtime, master" rev="2.7.8" rev-constraint-default="2.7.8" rev-constraint-dynamic="2.7.8" callerrev="2.7.8"/>
+				<artifacts>
+					<artifact name="commons-compiler" type="jar" ext="jar" status="no" details="" size="30595" time="0" location="C:\Users\tys\.ivy2\cache\org.codehaus.janino\commons-compiler\jars\commons-compiler-2.7.8.jar">
+						<origin-location is-local="false" location="http://maven.aliyun.com/nexus/content/groups/public/org/codehaus/janino/commons-compiler/2.7.8/commons-compiler-2.7.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.zookeeper" name="zookeeper">
+			<revision name="3.4.7" status="release" pubdate="20160503170541" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="16">
+				<metadata-artifact status="no" details="" size="4454" time="0" location="C:\Users\tys\.ivy2\cache\org.apache.zookeeper\zookeeper\ivy-3.4.7.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/apache/zookeeper/zookeeper/3.4.7/zookeeper-3.4.7.pom"/>
+				<caller organisation="com.isuwang" name="dapeng-registry-zookeeper" conf="default, compile, runtime, master" rev="3.4.7" rev-constraint-default="3.4.7" rev-constraint-dynamic="3.4.7" callerrev="1.3.0"/>
+				<artifacts>
+					<artifact name="zookeeper" type="jar" ext="jar" status="no" details="" size="804060" time="0" location="C:\Users\tys\.ivy2\cache\org.apache.zookeeper\zookeeper\jars\zookeeper-3.4.7.jar">
+						<origin-location is-local="false" location="http://maven.aliyun.com/nexus/content/groups/public/org/apache/zookeeper/zookeeper/3.4.7/zookeeper-3.4.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="jline" name="jline">
+			<revision name="0.9.94" status="release" pubdate="20160503170449" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jline.sourceforge.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+				<license name="BSD" url="LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="3002" time="0" location="C:\Users\tys\.ivy2\cache\jline\jline\ivy-0.9.94.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/jline/jline/0.9.94/jline-0.9.94.pom"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile, runtime" rev="0.9.94" rev-constraint-default="0.9.94" rev-constraint-dynamic="0.9.94" callerrev="3.4.7"/>
+				<artifacts>
+					<artifact name="jline" type="jar" ext="jar" status="no" details="" size="87325" time="0" location="C:\Users\tys\.ivy2\cache\jline\jline\jars\jline-0.9.94.jar">
+						<origin-location is-local="false" location="http://maven.aliyun.com/nexus/content/groups/public/jline/jline/0.9.94/jline-0.9.94.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.isuwang" name="dapeng-remoting-netty">
+			<revision name="1.3.0" status="release" pubdate="20171207151404" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="10">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5691" time="0" location="C:\Users\tys\.ivy2\cache\com.isuwang\dapeng-remoting-netty\ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="http://nexus.oa.isuwang.com/repository/maven-public/com/isuwang/dapeng-remoting-netty/1.3.0/dapeng-remoting-netty-1.3.0.pom"/>
+				<caller organisation="com.isuwang" name="user-api_service_2.12" conf="compile" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="0.1-SNAPSHOT"/>
+				<caller organisation="com.isuwang" name="user-api-api_2.12" conf="compile" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="dapeng-remoting-netty" type="jar" ext="jar" status="no" details="" size="38649" time="0" location="C:\Users\tys\.ivy2\cache\com.isuwang\dapeng-remoting-netty\jars\dapeng-remoting-netty-1.3.0.jar">
+						<origin-location is-local="false" location="http://nexus.oa.isuwang.com/repository/maven-public/com/isuwang/dapeng-remoting-netty/1.3.0/dapeng-remoting-netty-1.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty-all">
+			<revision name="4.1.6.Final" status="release" pubdate="20161014195555" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="20590" time="0" location="C:\Users\tys\.ivy2\cache\io.netty\netty-all\ivy-4.1.6.Final.xml" searched="false" origin-is-local="false" origin-location="http://nexus.oa.isuwang.com/repository/maven-public/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final.pom"/>
+				<caller organisation="com.isuwang" name="dapeng-remoting-netty" conf="default, compile, runtime, master" rev="4.1.6.Final" rev-constraint-default="4.1.6.Final" rev-constraint-dynamic="4.1.6.Final" callerrev="1.3.0"/>
+				<artifacts>
+					<artifact name="netty-all" type="jar" ext="jar" status="no" details="" size="3533285" time="0" location="C:\Users\tys\.ivy2\cache\io.netty\netty-all\jars\netty-all-4.1.6.Final.jar">
+						<origin-location is-local="false" location="http://nexus.oa.isuwang.com/repository/maven-public/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-logging" name="commons-logging">
+			<revision name="1.2" status="release" pubdate="20160503170436" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-logging/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="26">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="11725" time="0" location="C:\Users\tys\.ivy2\cache\commons-logging\commons-logging\ivy-1.2.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/commons-logging/commons-logging/1.2/commons-logging-1.2.pom"/>
+				<caller organisation="org.springframework" name="spring-core" conf="compile, runtime" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="4.2.4.RELEASE"/>
+				<artifacts>
+					<artifact name="commons-logging" type="jar" ext="jar" status="no" details="" size="61829" time="0" location="C:\Users\tys\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.2.jar">
+						<origin-location is-local="false" location="http://maven.aliyun.com/nexus/content/groups/public/commons-logging/commons-logging/1.2/commons-logging-1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-databind">
+			<revision name="2.6.2" status="release" pubdate="20160503170429" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="8791" time="0" location="C:\Users\tys\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\ivy-2.6.2.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/com/fasterxml/jackson/core/jackson-databind/2.6.2/jackson-databind-2.6.2.pom"/>
+				<caller organisation="com.isuwang" name="dapeng-remoting-netty" conf="default, compile, runtime, master" rev="2.6.2" rev-constraint-default="2.6.2" rev-constraint-dynamic="2.6.2" callerrev="1.3.0"/>
+				<artifacts>
+					<artifact name="jackson-databind" type="bundle" ext="jar" status="no" details="" size="1167351" time="0" location="C:\Users\tys\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.6.2.jar">
+						<origin-location is-local="false" location="http://maven.aliyun.com/nexus/content/groups/public/com/fasterxml/jackson/core/jackson-databind/2.6.2/jackson-databind-2.6.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-core">
+			<revision name="2.6.2" status="release" pubdate="20160503170429" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FasterXML/jackson-core" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7007" time="0" location="C:\Users\tys\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\ivy-2.6.2.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/com/fasterxml/jackson/core/jackson-core/2.6.2/jackson-core-2.6.2.pom"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.6.2" rev-constraint-default="2.6.2" rev-constraint-dynamic="2.6.2" callerrev="2.6.2"/>
+				<artifacts>
+					<artifact name="jackson-core" type="bundle" ext="jar" status="no" details="" size="258824" time="0" location="C:\Users\tys\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.6.2.jar">
+						<origin-location is-local="false" location="http://maven.aliyun.com/nexus/content/groups/public/com/fasterxml/jackson/core/jackson-core/2.6.2/jackson-core-2.6.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-annotations">
+			<revision name="2.6.0" status="release" pubdate="20160503170430" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6552" time="0" location="C:\Users\tys\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\ivy-2.6.0.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/com/fasterxml/jackson/core/jackson-annotations/2.6.0/jackson-annotations-2.6.0.pom"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="2.6.2"/>
+				<artifacts>
+					<artifact name="jackson-annotations" type="bundle" ext="jar" status="no" details="" size="46968" time="0" location="C:\Users\tys\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.6.0.jar">
+						<origin-location is-local="false" location="http://maven.aliyun.com/nexus/content/groups/public/com/fasterxml/jackson/core/jackson-annotations/2.6.0/jackson-annotations-2.6.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.isuwang" name="dapeng-remoting-api">
+			<revision name="1.3.0" status="release" pubdate="20171207151356" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="2">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5677" time="0" location="C:\Users\tys\.ivy2\cache\com.isuwang\dapeng-remoting-api\ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="http://nexus.oa.isuwang.com/repository/maven-public/com/isuwang/dapeng-remoting-api/1.3.0/dapeng-remoting-api-1.3.0.pom"/>
+				<caller organisation="com.isuwang" name="user-api-api_2.12" conf="compile" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="0.1-SNAPSHOT"/>
+				<caller organisation="com.isuwang" name="dapeng-remoting-netty" conf="default, compile, runtime, master" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="1.3.0"/>
+				<artifacts>
+					<artifact name="dapeng-remoting-api" type="jar" ext="jar" status="no" details="" size="43321" time="0" location="C:\Users\tys\.ivy2\cache\com.isuwang\dapeng-remoting-api\jars\dapeng-remoting-api-1.3.0.jar">
+						<origin-location is-local="false" location="http://nexus.oa.isuwang.com/repository/maven-public/com/isuwang/dapeng-remoting-api/1.3.0/dapeng-remoting-api-1.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.isuwang" name="dapeng-transaction-api">
+			<revision name="1.3.0" status="release" pubdate="20171207151345" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5232" time="0" location="C:\Users\tys\.ivy2\cache\com.isuwang\dapeng-transaction-api\ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="http://nexus.oa.isuwang.com/repository/maven-public/com/isuwang/dapeng-transaction-api/1.3.0/dapeng-transaction-api-1.3.0.pom"/>
+				<caller organisation="com.isuwang" name="dapeng-remoting-api" conf="default, compile, runtime, master" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="1.3.0"/>
+				<artifacts>
+					<artifact name="dapeng-transaction-api" type="jar" ext="jar" status="no" details="" size="16882" time="0" location="C:\Users\tys\.ivy2\cache\com.isuwang\dapeng-transaction-api\jars\dapeng-transaction-api-1.3.0.jar">
+						<origin-location is-local="false" location="http://nexus.oa.isuwang.com/repository/maven-public/com/isuwang/dapeng-transaction-api/1.3.0/dapeng-transaction-api-1.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.code.gson" name="gson">
+			<revision name="2.3.1" status="release" pubdate="20160503170418" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/google-gson/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3420" time="0" location="C:\Users\tys\.ivy2\cache\com.google.code.gson\gson\ivy-2.3.1.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/com/google/code/gson/gson/2.3.1/gson-2.3.1.pom"/>
+				<caller organisation="com.isuwang" name="dapeng-transaction-api" conf="compile, runtime" rev="2.3.1" rev-constraint-default="2.3.1" rev-constraint-dynamic="2.3.1" callerrev="1.3.0"/>
+				<artifacts>
+					<artifact name="gson" type="jar" ext="jar" status="no" details="" size="210856" time="0" location="C:\Users\tys\.ivy2\cache\com.google.code.gson\gson\jars\gson-2.3.1.jar">
+						<origin-location is-local="false" location="http://maven.aliyun.com/nexus/content/groups/public/com/google/code/gson/gson/2.3.1/gson-2.3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.isuwang" name="dapeng-registry-api">
+			<revision name="1.3.0" status="release" pubdate="20171207151330" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5376" time="0" location="C:\Users\tys\.ivy2\cache\com.isuwang\dapeng-registry-api\ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="http://nexus.oa.isuwang.com/repository/maven-public/com/isuwang/dapeng-registry-api/1.3.0/dapeng-registry-api-1.3.0.pom"/>
+				<caller organisation="com.isuwang" name="dapeng-registry-zookeeper" conf="default, compile, runtime, master" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="1.3.0"/>
+				<caller organisation="com.isuwang" name="dapeng-remoting-api" conf="default, compile, runtime, master" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="1.3.0"/>
+				<artifacts>
+					<artifact name="dapeng-registry-api" type="jar" ext="jar" status="no" details="" size="6895" time="0" location="C:\Users\tys\.ivy2\cache\com.isuwang\dapeng-registry-api\jars\dapeng-registry-api-1.3.0.jar">
+						<origin-location is-local="false" location="http://nexus.oa.isuwang.com/repository/maven-public/com/isuwang/dapeng-registry-api/1.3.0/dapeng-registry-api-1.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.isuwang" name="dapeng-route-impl">
+			<revision name="1.3.0" status="release" pubdate="20171207151324" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5106" time="0" location="C:\Users\tys\.ivy2\cache\com.isuwang\dapeng-route-impl\ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="http://nexus.oa.isuwang.com/repository/maven-public/com/isuwang/dapeng-route-impl/1.3.0/dapeng-route-impl-1.3.0.pom"/>
+				<caller organisation="com.isuwang" name="dapeng-registry-api" conf="compile, runtime" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="1.3.0"/>
+				<artifacts>
+					<artifact name="dapeng-route-impl" type="jar" ext="jar" status="no" details="" size="24393" time="0" location="C:\Users\tys\.ivy2\cache\com.isuwang\dapeng-route-impl\jars\dapeng-route-impl-1.3.0.jar">
+						<origin-location is-local="false" location="http://nexus.oa.isuwang.com/repository/maven-public/com/isuwang/dapeng-route-impl/1.3.0/dapeng-route-impl-1.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.isuwang" name="dapeng-route-api">
+			<revision name="1.3.0" status="release" pubdate="20171207151314" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5099" time="0" location="C:\Users\tys\.ivy2\cache\com.isuwang\dapeng-route-api\ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="http://nexus.oa.isuwang.com/repository/maven-public/com/isuwang/dapeng-route-api/1.3.0/dapeng-route-api-1.3.0.pom"/>
+				<caller organisation="com.isuwang" name="dapeng-route-impl" conf="compile, runtime" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="1.3.0"/>
+				<artifacts>
+					<artifact name="dapeng-route-api" type="jar" ext="jar" status="no" details="" size="4748" time="0" location="C:\Users\tys\.ivy2\cache\com.isuwang\dapeng-route-api\jars\dapeng-route-api-1.3.0.jar">
+						<origin-location is-local="false" location="http://nexus.oa.isuwang.com/repository/maven-public/com/isuwang/dapeng-route-api/1.3.0/dapeng-route-api-1.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.isuwang" name="dapeng-core">
+			<revision name="1.3.0" status="release" pubdate="20171207151305" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4957" time="0" location="C:\Users\tys\.ivy2\cache\com.isuwang\dapeng-core\ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="http://nexus.oa.isuwang.com/repository/maven-public/com/isuwang/dapeng-core/1.3.0/dapeng-core-1.3.0.pom"/>
+				<caller organisation="com.isuwang" name="dapeng-route-api" conf="compile, runtime" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="1.3.0"/>
+				<caller organisation="com.isuwang" name="dapeng-transaction-api" conf="compile, runtime" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="1.3.0"/>
+				<caller organisation="com.isuwang" name="dapeng-registry-api" conf="compile, runtime" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="1.3.0"/>
+				<caller organisation="com.isuwang" name="dapeng-remoting-api" conf="default, compile, runtime, master" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="1.3.0"/>
+				<caller organisation="com.isuwang" name="dapeng-spring" conf="default, compile, runtime, master" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="1.3.0"/>
+				<artifacts>
+					<artifact name="dapeng-core" type="jar" ext="jar" status="no" details="" size="137554" time="0" location="C:\Users\tys\.ivy2\cache\com.isuwang\dapeng-core\jars\dapeng-core-1.3.0.jar">
+						<origin-location is-local="false" location="http://nexus.oa.isuwang.com/repository/maven-public/com/isuwang/dapeng-core/1.3.0/dapeng-core-1.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.13" status="release" pubdate="20160503170522" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="4">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="5246" time="0" location="C:\Users\tys\.ivy2\cache\org.slf4j\slf4j-api\ivy-1.7.13.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/slf4j/slf4j-api/1.7.13/slf4j-api-1.7.13.pom"/>
+				<caller organisation="com.isuwang" name="user-api_service_2.12" conf="compile" rev="1.7.13" rev-constraint-default="1.7.13" rev-constraint-dynamic="1.7.13" callerrev="0.1-SNAPSHOT"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="1.1.3"/>
+				<caller organisation="com.isuwang" name="dapeng-core" conf="compile, runtime" rev="1.7.13" rev-constraint-default="1.7.13" rev-constraint-dynamic="1.7.13" callerrev="1.3.0"/>
+				<caller organisation="com.isuwang" name="dapeng-registry-zookeeper" conf="default, compile, runtime, master" rev="1.7.13" rev-constraint-default="1.7.13" rev-constraint-dynamic="1.7.13" callerrev="1.3.0"/>
+				<caller organisation="com.github.wangzaixiang" name="scala-sql_2.12" conf="default, compile, runtime, master" rev="1.7.9" rev-constraint-default="1.7.9" rev-constraint-dynamic="1.7.9" callerrev="2.0.0"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile, runtime" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="3.4.7"/>
+				<caller organisation="com.isuwang" name="dapeng-spring" conf="default, compile, runtime, master" rev="1.7.13" rev-constraint-default="1.7.13" rev-constraint-dynamic="1.7.13" callerrev="1.3.0"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="33088" time="0" location="C:\Users\tys\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.13.jar">
+						<origin-location is-local="false" location="http://maven.aliyun.com/nexus/content/groups/public/org/slf4j/slf4j-api/1.7.13/slf4j-api-1.7.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.7.9" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.7.13"/>
+				<caller organisation="com.github.wangzaixiang" name="scala-sql_2.12" conf="default, compile, runtime, master" rev="1.7.9" rev-constraint-default="1.7.9" rev-constraint-dynamic="1.7.9" callerrev="2.0.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.7.7" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.7.13"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="1.1.3"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.6.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.7.13"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile, runtime" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="3.4.7"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.12.2" status="release" pubdate="20170413161911" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.2/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2685" time="0" location="C:\Users\tys\.ivy2\cache\org.scala-lang\scala-library\ivy-2.12.2.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/scala-lang/scala-library/2.12.2/scala-library-2.12.2.pom"/>
+				<caller organisation="com.isuwang" name="user-api_service_2.12" conf="compile" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="0.1-SNAPSHOT"/>
+				<caller organisation="com.isuwang" name="user-api-api_2.12" conf="compile" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="0.1-SNAPSHOT"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="2.12.2"/>
+				<caller organisation="com.github.wangzaixiang" name="scala-sql_2.12" conf="default, compile, runtime, master" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="2.0.0"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5278660" time="0" location="C:\Users\tys\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.2.jar">
+						<origin-location is-local="false" location="http://maven.aliyun.com/nexus/content/groups/public/org/scala-lang/scala-library/2.12.2/scala-library-2.12.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
