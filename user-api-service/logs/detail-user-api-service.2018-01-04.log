@@ -1,0 +1,1045 @@
+01-04 09:15:56 315 Thread-8 INFO - {dataSource-1} inited
+01-04 09:16:09 196 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty request body:getServiceMetadata_args()
+01-04 09:16:09 199 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty request header:Optional.empty body:getServiceMetadata_args()
+01-04 09:16:09 267 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty response body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26063)
+01-04 09:16:09 268 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty response header:Optional.empty body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26063)
+01-04 10:27:54 251 Thread-8 INFO - {dataSource-1} inited
+01-04 10:28:06 538 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty request body:getServiceMetadata_args()
+01-04 10:28:06 541 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty request header:Optional.empty body:getServiceMetadata_args()
+01-04 10:28:06 552 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty response body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26063)
+01-04 10:28:06 552 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty response header:Optional.empty body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26063)
+01-04 10:28:53 075 trans-pool-1-thread-2 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty request body:modifyUser_args(ModifyUserRequest(263613452@qq.com,263613452))
+01-04 10:28:53 075 trans-pool-1-thread-2 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty request header:Optional.empty body:modifyUser_args(ModifyUserRequest(263613452@qq.com,263613452))
+01-04 10:28:53 151 trans-pool-1-thread-2 DEBUG - SQL Preparing: SELECT user_name as userName,telephone,status,integral,created_at as createdAt,updated_at as updatedAt,email,qq FROM users WHERE id=? args: WrappedArray(JdbcValue(1))
+01-04 10:28:53 256 trans-pool-1-thread-2 DEBUG - SQL result: 1
+01-04 10:28:53 259 trans-pool-1-thread-2 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty response body:modifyUser_result(ModifyUserResponse(lilin,15827163929,(1,已激活),1514985586000,None,None))
+01-04 10:28:53 259 trans-pool-1-thread-2 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty response header:Optional.empty body:modifyUser_result(ModifyUserResponse(lilin,15827163929,(1,已激活),1514985586000,None,None))
+01-04 10:29:03 685 trans-pool-1-thread-3 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty request body:modifyUser_args(ModifyUserRequest(dasdasdas,263613452))
+01-04 10:29:03 686 trans-pool-1-thread-3 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty request header:Optional.empty body:modifyUser_args(ModifyUserRequest(dasdasdas,263613452))
+01-04 10:29:03 686 trans-pool-1-thread-3 DEBUG - SQL Preparing: SELECT user_name as userName,telephone,status,integral,created_at as createdAt,updated_at as updatedAt,email,qq FROM users WHERE id=? args: WrappedArray(JdbcValue(1))
+01-04 10:29:03 688 trans-pool-1-thread-3 DEBUG - SQL result: 1
+01-04 10:29:03 689 trans-pool-1-thread-3 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty response body:modifyUser_result(ModifyUserResponse(lilin,15827163929,(1,已激活),1514985586000,None,None))
+01-04 10:29:03 689 trans-pool-1-thread-3 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty response header:Optional.empty body:modifyUser_result(ModifyUserResponse(lilin,15827163929,(1,已激活),1514985586000,None,None))
+01-04 10:29:19 298 trans-pool-1-thread-4 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty request body:modifyUser_args(ModifyUserRequest(dasdasdas,sdfsdf))
+01-04 10:29:19 298 trans-pool-1-thread-4 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty request header:Optional.empty body:modifyUser_args(ModifyUserRequest(dasdasdas,sdfsdf))
+01-04 10:29:19 299 trans-pool-1-thread-4 DEBUG - SQL Preparing: SELECT user_name as userName,telephone,status,integral,created_at as createdAt,updated_at as updatedAt,email,qq FROM users WHERE id=? args: WrappedArray(JdbcValue(1))
+01-04 10:29:19 300 trans-pool-1-thread-4 DEBUG - SQL result: 1
+01-04 10:29:19 300 trans-pool-1-thread-4 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty response body:modifyUser_result(ModifyUserResponse(lilin,15827163929,(1,已激活),1514985586000,None,None))
+01-04 10:29:19 300 trans-pool-1-thread-4 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty response header:Optional.empty body:modifyUser_result(ModifyUserResponse(lilin,15827163929,(1,已激活),1514985586000,None,None))
+01-04 10:49:42 108 Thread-8 INFO - {dataSource-1} inited
+01-04 10:49:54 539 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty request body:getServiceMetadata_args()
+01-04 10:49:54 542 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty request header:Optional.empty body:getServiceMetadata_args()
+01-04 10:49:54 552 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty response body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26063)
+01-04 10:49:54 552 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty response header:Optional.empty body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26063)
+01-04 10:50:36 438 trans-pool-1-thread-2 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty request body:modifyUser_args(ModifyUserRequest(tuyasong@qq.com,263613452))
+01-04 10:50:36 439 trans-pool-1-thread-2 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty request header:Optional.empty body:modifyUser_args(ModifyUserRequest(tuyasong@qq.com,263613452))
+01-04 10:50:36 520 trans-pool-1-thread-2 DEBUG - SQL Preparing: SELECT user_name as userName,telephone,status,integral,created_at as createdAt,updated_at as updatedAt,email,qq FROM users WHERE id=? args: WrappedArray(JdbcValue(1))
+01-04 10:50:36 627 trans-pool-1-thread-2 DEBUG - SQL result: 1
+01-04 10:50:36 628 trans-pool-1-thread-2 DEBUG - SQL Preparing: SELECT user_name as userName,telephone,status,integral,created_at as createdAt,updated_at as updatedAt,email,qq FROM users WHERE id=? args: WrappedArray(JdbcValue(1))
+01-04 10:50:36 629 trans-pool-1-thread-2 DEBUG - SQL result: 1
+01-04 10:50:36 630 trans-pool-1-thread-2 DEBUG - SQL Preparing: UPDATE users SET qq=?,email=? WHERE id=? args: WrappedArray(JdbcValue(263613452), JdbcValue(tuyasong@qq.com), JdbcValue(1))
+01-04 10:50:36 664 trans-pool-1-thread-2 DEBUG - SQL result: 1
+01-04 10:50:36 667 trans-pool-1-thread-2 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty response body:modifyUser_result(ModifyUserResponse(lilin,15827163929,(1,已激活),1514985586000,None,None))
+01-04 10:50:36 668 trans-pool-1-thread-2 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty response header:Optional.empty body:modifyUser_result(ModifyUserResponse(lilin,15827163929,(1,已激活),1514985586000,None,None))
+01-04 10:50:48 901 trans-pool-1-thread-3 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty request body:modifyUser_args(ModifyUserRequest(sadjkadsj,263613452))
+01-04 10:50:48 901 trans-pool-1-thread-3 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty request header:Optional.empty body:modifyUser_args(ModifyUserRequest(sadjkadsj,263613452))
+01-04 10:50:48 906 trans-pool-1-thread-3 ERROR - 邮箱输入错误
+java.lang.RuntimeException: 邮箱输入错误
+	at com.today.user.UserServiceImpl.preCheckModifyUser(UserServiceImpl.scala:210) ~[classes/:na]
+	at com.today.user.UserServiceImpl.modifyUser(UserServiceImpl.scala:198) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$modifyUser.getResult(UserServiceCodec.scala:480) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$modifyUser.getResult(UserServiceCodec.scala:470) ~[classes/:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.lambda$process$0(SoaCommonBaseProcessor.java:84) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.DispatchFilter.doFilter(DispatchFilter.java:27) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SlowTimeServiceFilter.doFilter(SlowTimeServiceFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.ProviderTimesFilter.doFilter(ProviderTimesFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SoaGlobalTransactionalFilter.doFilter(SoaGlobalTransactionalFilter.java:50) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.process(SoaCommonBaseProcessor.java:103) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.processRequest(SoaServerHandler.java:299) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.lambda$readRequestHeader$5(SoaServerHandler.java:130) ~[dapeng-container-1.3.0.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+01-04 10:51:05 162 trans-pool-1-thread-4 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty request body:modifyUser_args(ModifyUserRequest(263613452@qq.com,sadasdas))
+01-04 10:51:05 162 trans-pool-1-thread-4 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty request header:Optional.empty body:modifyUser_args(ModifyUserRequest(263613452@qq.com,sadasdas))
+01-04 10:51:05 164 trans-pool-1-thread-4 ERROR - QQ输入不合法
+java.lang.RuntimeException: QQ输入不合法
+	at com.today.user.UserServiceImpl.preCheckModifyUser(UserServiceImpl.scala:214) ~[classes/:na]
+	at com.today.user.UserServiceImpl.modifyUser(UserServiceImpl.scala:198) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$modifyUser.getResult(UserServiceCodec.scala:480) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$modifyUser.getResult(UserServiceCodec.scala:470) ~[classes/:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.lambda$process$0(SoaCommonBaseProcessor.java:84) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.DispatchFilter.doFilter(DispatchFilter.java:27) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SlowTimeServiceFilter.doFilter(SlowTimeServiceFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.ProviderTimesFilter.doFilter(ProviderTimesFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SoaGlobalTransactionalFilter.doFilter(SoaGlobalTransactionalFilter.java:50) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.process(SoaCommonBaseProcessor.java:103) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.processRequest(SoaServerHandler.java:299) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.lambda$readRequestHeader$5(SoaServerHandler.java:130) ~[dapeng-container-1.3.0.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+01-04 10:52:26 135 Thread-8 INFO - {dataSource-1} inited
+01-04 10:52:38 276 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty request body:getServiceMetadata_args()
+01-04 10:52:38 279 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty request header:Optional.empty body:getServiceMetadata_args()
+01-04 10:52:38 289 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty response body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26063)
+01-04 10:52:38 290 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty response header:Optional.empty body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26063)
+01-04 10:53:48 126 trans-pool-1-thread-2 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty request body:modifyUser_args(ModifyUserRequest(1532379461@qq.com,1532379461))
+01-04 10:53:48 126 trans-pool-1-thread-2 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty request header:Optional.empty body:modifyUser_args(ModifyUserRequest(1532379461@qq.com,1532379461))
+01-04 10:53:48 203 trans-pool-1-thread-2 DEBUG - SQL Preparing: SELECT user_name as userName,telephone,status,integral,created_at as createdAt,updated_at as updatedAt,email,qq FROM users WHERE id=? args: WrappedArray(JdbcValue(2))
+01-04 10:53:48 308 trans-pool-1-thread-2 DEBUG - SQL result: 1
+01-04 10:53:48 310 trans-pool-1-thread-2 DEBUG - SQL Preparing: SELECT user_name as userName,telephone,status,integral,created_at as createdAt,updated_at as updatedAt,email,qq FROM users WHERE id=? args: WrappedArray(JdbcValue(2))
+01-04 10:53:48 311 trans-pool-1-thread-2 DEBUG - SQL result: 1
+01-04 10:53:48 313 trans-pool-1-thread-2 DEBUG - SQL Preparing: UPDATE users SET qq=?,email=? WHERE id=? args: WrappedArray(JdbcValue(1532379461), JdbcValue(1532379461@qq.com), JdbcValue(2))
+01-04 10:53:48 348 trans-pool-1-thread-2 DEBUG - SQL result: 1
+01-04 10:53:48 351 trans-pool-1-thread-2 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty response body:modifyUser_result(ModifyUserResponse(矮子龙,13570088888,(1,已激活),1514985588000,None,None))
+01-04 10:53:48 351 trans-pool-1-thread-2 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty response header:Optional.empty body:modifyUser_result(ModifyUserResponse(矮子龙,13570088888,(1,已激活),1514985588000,None,None))
+01-04 10:54:45 153 Thread-8 INFO - {dataSource-1} inited
+01-04 10:54:57 684 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty request body:getServiceMetadata_args()
+01-04 10:54:57 688 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty request header:Optional.empty body:getServiceMetadata_args()
+01-04 10:54:57 700 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty response body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26063)
+01-04 10:54:57 701 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty response header:Optional.empty body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26063)
+01-04 10:55:12 332 trans-pool-1-thread-2 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty request body:modifyUser_args(ModifyUserRequest(dfdsfds,dssaad))
+01-04 10:55:12 332 trans-pool-1-thread-2 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty request header:Optional.empty body:modifyUser_args(ModifyUserRequest(dfdsfds,dssaad))
+01-04 10:55:12 342 trans-pool-1-thread-2 ERROR - 邮箱输入错误
+java.lang.RuntimeException: 邮箱输入错误
+	at com.today.user.UserServiceImpl.preCheckModifyUser(UserServiceImpl.scala:210) ~[classes/:na]
+	at com.today.user.UserServiceImpl.modifyUser(UserServiceImpl.scala:198) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$modifyUser.getResult(UserServiceCodec.scala:480) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$modifyUser.getResult(UserServiceCodec.scala:470) ~[classes/:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.lambda$process$0(SoaCommonBaseProcessor.java:84) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.DispatchFilter.doFilter(DispatchFilter.java:27) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SlowTimeServiceFilter.doFilter(SlowTimeServiceFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.ProviderTimesFilter.doFilter(ProviderTimesFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SoaGlobalTransactionalFilter.doFilter(SoaGlobalTransactionalFilter.java:50) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.process(SoaCommonBaseProcessor.java:103) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.processRequest(SoaServerHandler.java:299) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.lambda$readRequestHeader$5(SoaServerHandler.java:130) ~[dapeng-container-1.3.0.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+01-04 10:55:29 043 trans-pool-1-thread-3 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty request body:modifyUser_args(ModifyUserRequest(12365489@163.com,dssaad))
+01-04 10:55:29 043 trans-pool-1-thread-3 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty request header:Optional.empty body:modifyUser_args(ModifyUserRequest(12365489@163.com,dssaad))
+01-04 10:55:29 045 trans-pool-1-thread-3 ERROR - QQ输入不合法
+java.lang.RuntimeException: QQ输入不合法
+	at com.today.user.UserServiceImpl.preCheckModifyUser(UserServiceImpl.scala:214) ~[classes/:na]
+	at com.today.user.UserServiceImpl.modifyUser(UserServiceImpl.scala:198) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$modifyUser.getResult(UserServiceCodec.scala:480) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$modifyUser.getResult(UserServiceCodec.scala:470) ~[classes/:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.lambda$process$0(SoaCommonBaseProcessor.java:84) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.DispatchFilter.doFilter(DispatchFilter.java:27) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SlowTimeServiceFilter.doFilter(SlowTimeServiceFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.ProviderTimesFilter.doFilter(ProviderTimesFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SoaGlobalTransactionalFilter.doFilter(SoaGlobalTransactionalFilter.java:50) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.process(SoaCommonBaseProcessor.java:103) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.processRequest(SoaServerHandler.java:299) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.lambda$readRequestHeader$5(SoaServerHandler.java:130) ~[dapeng-container-1.3.0.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+01-04 10:55:34 922 trans-pool-1-thread-4 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty request body:modifyUser_args(ModifyUserRequest(12365489@163.com,45698))
+01-04 10:55:34 923 trans-pool-1-thread-4 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty request header:Optional.empty body:modifyUser_args(ModifyUserRequest(12365489@163.com,45698))
+01-04 10:55:35 007 trans-pool-1-thread-4 DEBUG - SQL Preparing: SELECT user_name as userName,telephone,status,integral,created_at as createdAt,updated_at as updatedAt,email,qq FROM users WHERE id=? args: WrappedArray(JdbcValue(17))
+01-04 10:55:35 119 trans-pool-1-thread-4 DEBUG - SQL result: 1
+01-04 10:55:35 120 trans-pool-1-thread-4 DEBUG - SQL Preparing: SELECT user_name as userName,telephone,status,integral,created_at as createdAt,updated_at as updatedAt,email,qq FROM users WHERE id=? args: WrappedArray(JdbcValue(17))
+01-04 10:55:35 121 trans-pool-1-thread-4 DEBUG - SQL result: 1
+01-04 10:55:35 123 trans-pool-1-thread-4 DEBUG - SQL Preparing: UPDATE users SET qq=?,email=? WHERE id=? args: WrappedArray(JdbcValue(45698), JdbcValue(12365489@163.com), JdbcValue(17))
+01-04 10:55:35 149 trans-pool-1-thread-4 DEBUG - SQL result: 1
+01-04 10:55:35 152 trans-pool-1-thread-4 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty response body:modifyUser_result(ModifyUserResponse(lengleng,15800911990,(0,#0),1514984280000,None,None))
+01-04 10:55:35 152 trans-pool-1-thread-4 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty response header:Optional.empty body:modifyUser_result(ModifyUserResponse(lengleng,15800911990,(0,#0),1514984280000,None,None))
+01-04 10:55:39 816 trans-pool-1-thread-5 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty request body:modifyUser_args(ModifyUserRequest(12365489@163.com,45698))
+01-04 10:55:39 816 trans-pool-1-thread-5 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty request header:Optional.empty body:modifyUser_args(ModifyUserRequest(12365489@163.com,45698))
+01-04 10:55:39 816 trans-pool-1-thread-5 DEBUG - SQL Preparing: SELECT user_name as userName,telephone,status,integral,created_at as createdAt,updated_at as updatedAt,email,qq FROM users WHERE id=? args: WrappedArray(JdbcValue(17))
+01-04 10:55:39 818 trans-pool-1-thread-5 DEBUG - SQL result: 1
+01-04 10:55:39 819 trans-pool-1-thread-5 DEBUG - SQL Preparing: SELECT user_name as userName,telephone,status,integral,created_at as createdAt,updated_at as updatedAt,email,qq FROM users WHERE id=? args: WrappedArray(JdbcValue(17))
+01-04 10:55:39 820 trans-pool-1-thread-5 DEBUG - SQL result: 1
+01-04 10:55:39 820 trans-pool-1-thread-5 DEBUG - SQL Preparing: UPDATE users SET qq=?,email=? WHERE id=? args: WrappedArray(JdbcValue(45698), JdbcValue(12365489@163.com), JdbcValue(17))
+01-04 10:55:39 821 trans-pool-1-thread-5 DEBUG - SQL result: 1
+01-04 10:55:39 822 trans-pool-1-thread-5 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty response body:modifyUser_result(ModifyUserResponse(lengleng,15800911990,(0,#0),1515034535000,None,None))
+01-04 10:55:39 822 trans-pool-1-thread-5 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty response header:Optional.empty body:modifyUser_result(ModifyUserResponse(lengleng,15800911990,(0,#0),1515034535000,None,None))
+01-04 10:55:57 072 trans-pool-1-thread-6 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty request body:modifyUser_args(ModifyUserRequest(12365489@163.com,45698DSA))
+01-04 10:55:57 072 trans-pool-1-thread-6 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty request header:Optional.empty body:modifyUser_args(ModifyUserRequest(12365489@163.com,45698DSA))
+01-04 10:55:57 073 trans-pool-1-thread-6 DEBUG - SQL Preparing: SELECT user_name as userName,telephone,status,integral,created_at as createdAt,updated_at as updatedAt,email,qq FROM users WHERE id=? args: WrappedArray(JdbcValue(17))
+01-04 10:55:57 074 trans-pool-1-thread-6 DEBUG - SQL result: 1
+01-04 10:55:57 075 trans-pool-1-thread-6 DEBUG - SQL Preparing: SELECT user_name as userName,telephone,status,integral,created_at as createdAt,updated_at as updatedAt,email,qq FROM users WHERE id=? args: WrappedArray(JdbcValue(17))
+01-04 10:55:57 076 trans-pool-1-thread-6 DEBUG - SQL result: 1
+01-04 10:55:57 077 trans-pool-1-thread-6 DEBUG - SQL Preparing: UPDATE users SET qq=?,email=? WHERE id=? args: WrappedArray(JdbcValue(45698DSA), JdbcValue(12365489@163.com), JdbcValue(17))
+01-04 10:55:57 137 trans-pool-1-thread-6 DEBUG - SQL result: 1
+01-04 10:55:57 137 trans-pool-1-thread-6 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty response body:modifyUser_result(ModifyUserResponse(lengleng,15800911990,(0,#0),1515034535000,None,None))
+01-04 10:55:57 137 trans-pool-1-thread-6 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty response header:Optional.empty body:modifyUser_result(ModifyUserResponse(lengleng,15800911990,(0,#0),1515034535000,None,None))
+01-04 10:58:39 598 trans-pool-1-thread-7 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty request body:modifyUser_args(ModifyUserRequest(65848794@163.com,6984521))
+01-04 10:58:39 598 trans-pool-1-thread-7 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty request header:Optional.empty body:modifyUser_args(ModifyUserRequest(65848794@163.com,6984521))
+01-04 10:58:39 599 trans-pool-1-thread-7 DEBUG - SQL Preparing: SELECT user_name as userName,telephone,status,integral,created_at as createdAt,updated_at as updatedAt,email,qq FROM users WHERE id=? args: WrappedArray(JdbcValue(17))
+01-04 10:58:39 602 trans-pool-1-thread-7 DEBUG - SQL result: 1
+01-04 10:58:39 602 trans-pool-1-thread-7 DEBUG - SQL Preparing: SELECT user_name as userName,telephone,status,integral,created_at as createdAt,updated_at as updatedAt,email,qq FROM users WHERE id=? args: WrappedArray(JdbcValue(17))
+01-04 10:58:39 604 trans-pool-1-thread-7 DEBUG - SQL result: 1
+01-04 10:58:39 604 trans-pool-1-thread-7 DEBUG - SQL Preparing: UPDATE users SET qq=?,email=? WHERE id=? args: WrappedArray(JdbcValue(6984521), JdbcValue(65848794@163.com), JdbcValue(17))
+01-04 10:58:39 668 trans-pool-1-thread-7 DEBUG - SQL result: 1
+01-04 10:58:39 668 trans-pool-1-thread-7 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty response body:modifyUser_result(ModifyUserResponse(lengleng,15800911990,(0,#0),1515034557000,None,None))
+01-04 10:58:39 668 trans-pool-1-thread-7 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty response header:Optional.empty body:modifyUser_result(ModifyUserResponse(lengleng,15800911990,(0,#0),1515034557000,None,None))
+01-04 11:00:46 803 Thread-8 INFO - {dataSource-1} inited
+01-04 11:00:59 017 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty request body:getServiceMetadata_args()
+01-04 11:00:59 020 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty request header:Optional.empty body:getServiceMetadata_args()
+01-04 11:00:59 029 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty response body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26063)
+01-04 11:00:59 030 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty response header:Optional.empty body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26063)
+01-04 11:01:50 288 Thread-8 INFO - {dataSource-1} inited
+01-04 11:02:02 538 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty request body:getServiceMetadata_args()
+01-04 11:02:02 541 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty request header:Optional.empty body:getServiceMetadata_args()
+01-04 11:02:02 552 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty response body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26063)
+01-04 11:02:02 552 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty response header:Optional.empty body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26063)
+01-04 11:02:38 377 trans-pool-1-thread-2 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty request body:modifyUser_args(ModifyUserRequest(153648138@163.com,65879452))
+01-04 11:02:38 377 trans-pool-1-thread-2 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty request header:Optional.empty body:modifyUser_args(ModifyUserRequest(153648138@163.com,65879452))
+01-04 11:02:38 453 trans-pool-1-thread-2 DEBUG - SQL Preparing: SELECT user_name as userName,telephone,status,integral,created_at as createdAt,updated_at as updatedAt,email,qq FROM users WHERE id=? args: WrappedArray(JdbcValue(17))
+01-04 11:02:38 554 trans-pool-1-thread-2 DEBUG - SQL result: 1
+01-04 11:02:38 555 trans-pool-1-thread-2 DEBUG - SQL Preparing: SELECT user_name as userName,telephone,status,integral,created_at as createdAt,updated_at as updatedAt,email,qq FROM users WHERE id=? args: WrappedArray(JdbcValue(17))
+01-04 11:02:38 556 trans-pool-1-thread-2 DEBUG - SQL result: 1
+01-04 11:02:38 558 trans-pool-1-thread-2 DEBUG - SQL Preparing: UPDATE users SET qq=?,email=? WHERE id=? args: WrappedArray(JdbcValue(65879452), JdbcValue(153648138@163.com), JdbcValue(17))
+01-04 11:02:38 627 trans-pool-1-thread-2 DEBUG - SQL result: 1
+01-04 11:02:38 630 trans-pool-1-thread-2 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty response body:modifyUser_result(ModifyUserResponse(lengleng,15800911990,(1,已激活),1515034821000,None,None))
+01-04 11:02:38 630 trans-pool-1-thread-2 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty response header:Optional.empty body:modifyUser_result(ModifyUserResponse(lengleng,15800911990,(1,已激活),1515034821000,None,None))
+01-04 11:03:29 230 Thread-8 INFO - {dataSource-1} inited
+01-04 11:03:41 441 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty request body:getServiceMetadata_args()
+01-04 11:03:41 444 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty request header:Optional.empty body:getServiceMetadata_args()
+01-04 11:03:41 455 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty response body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26063)
+01-04 11:03:41 455 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty response header:Optional.empty body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26063)
+01-04 11:20:36 014 Thread-8 INFO - {dataSource-1} inited
+01-04 11:20:48 267 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty request body:getServiceMetadata_args()
+01-04 11:20:48 271 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty request header:Optional.empty body:getServiceMetadata_args()
+01-04 11:20:48 281 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty response body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26063)
+01-04 11:20:48 281 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty response header:Optional.empty body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26063)
+01-04 11:21:39 028 trans-pool-1-thread-2 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty request body:modifyUser_args(ModifyUserRequest(sdasdasd,212322))
+01-04 11:21:39 028 trans-pool-1-thread-2 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty request header:Optional.empty body:modifyUser_args(ModifyUserRequest(sdasdasd,212322))
+01-04 11:21:39 038 trans-pool-1-thread-2 ERROR - 邮箱输入错误
+java.lang.RuntimeException: 邮箱输入错误
+	at com.today.user.UserServiceImpl.preCheckModifyUser(UserServiceImpl.scala:210) ~[classes/:na]
+	at com.today.user.UserServiceImpl.modifyUser(UserServiceImpl.scala:198) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$modifyUser.getResult(UserServiceCodec.scala:480) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$modifyUser.getResult(UserServiceCodec.scala:470) ~[classes/:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.lambda$process$0(SoaCommonBaseProcessor.java:84) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.DispatchFilter.doFilter(DispatchFilter.java:27) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SlowTimeServiceFilter.doFilter(SlowTimeServiceFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.ProviderTimesFilter.doFilter(ProviderTimesFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SoaGlobalTransactionalFilter.doFilter(SoaGlobalTransactionalFilter.java:50) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.process(SoaCommonBaseProcessor.java:103) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.processRequest(SoaServerHandler.java:299) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.lambda$readRequestHeader$5(SoaServerHandler.java:130) ~[dapeng-container-1.3.0.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+01-04 11:21:51 075 trans-pool-1-thread-3 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty request body:modifyUser_args(ModifyUserRequest(985647813@163.com,212322))
+01-04 11:21:51 075 trans-pool-1-thread-3 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty request header:Optional.empty body:modifyUser_args(ModifyUserRequest(985647813@163.com,212322))
+01-04 11:21:51 158 trans-pool-1-thread-3 DEBUG - SQL Preparing: SELECT user_name as userName,telephone,status,integral,created_at as createdAt,updated_at as updatedAt,email,qq FROM users WHERE id=? args: WrappedArray(JdbcValue(18))
+01-04 11:21:51 262 trans-pool-1-thread-3 DEBUG - SQL result: 1
+01-04 11:21:51 263 trans-pool-1-thread-3 DEBUG - SQL Preparing: SELECT user_name as userName,telephone,status,integral,created_at as createdAt,updated_at as updatedAt,email,qq FROM users WHERE id=? args: WrappedArray(JdbcValue(18))
+01-04 11:21:51 264 trans-pool-1-thread-3 DEBUG - SQL result: 1
+01-04 11:21:51 266 trans-pool-1-thread-3 DEBUG - SQL Preparing: UPDATE users SET qq=?,email=? WHERE id=? args: WrappedArray(JdbcValue(212322), JdbcValue(985647813@163.com), JdbcValue(18))
+01-04 11:21:51 310 trans-pool-1-thread-3 DEBUG - SQL result: 1
+01-04 11:21:51 313 trans-pool-1-thread-3 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty response body:modifyUser_result(ModifyUserResponse(quedian,15807109264,(3,冻结用户（涉嫌违规处理冻结期）),1515034889000,None,None))
+01-04 11:21:51 314 trans-pool-1-thread-3 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty response header:Optional.empty body:modifyUser_result(ModifyUserResponse(quedian,15807109264,(3,冻结用户（涉嫌违规处理冻结期）),1515034889000,None,None))
+01-04 11:23:30 014 Thread-8 INFO - {dataSource-1} inited
+01-04 11:23:42 230 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty request body:getServiceMetadata_args()
+01-04 11:23:42 233 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty request header:Optional.empty body:getServiceMetadata_args()
+01-04 11:23:42 244 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty response body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26063)
+01-04 11:23:42 244 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty response header:Optional.empty body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26063)
+01-04 11:24:00 184 trans-pool-1-thread-2 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty request body:modifyUser_args(ModifyUserRequest(sadsad,sdsaasdas))
+01-04 11:24:00 184 trans-pool-1-thread-2 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty request header:Optional.empty body:modifyUser_args(ModifyUserRequest(sadsad,sdsaasdas))
+01-04 11:24:00 195 trans-pool-1-thread-2 ERROR - 邮箱输入错误
+java.lang.RuntimeException: 邮箱输入错误
+	at com.today.user.UserServiceImpl.preCheckModifyUser(UserServiceImpl.scala:210) ~[classes/:na]
+	at com.today.user.UserServiceImpl.modifyUser(UserServiceImpl.scala:198) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$modifyUser.getResult(UserServiceCodec.scala:480) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$modifyUser.getResult(UserServiceCodec.scala:470) ~[classes/:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.lambda$process$0(SoaCommonBaseProcessor.java:84) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.DispatchFilter.doFilter(DispatchFilter.java:27) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SlowTimeServiceFilter.doFilter(SlowTimeServiceFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.ProviderTimesFilter.doFilter(ProviderTimesFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SoaGlobalTransactionalFilter.doFilter(SoaGlobalTransactionalFilter.java:50) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.process(SoaCommonBaseProcessor.java:103) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.processRequest(SoaServerHandler.java:299) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.lambda$readRequestHeader$5(SoaServerHandler.java:130) ~[dapeng-container-1.3.0.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+01-04 11:24:19 745 trans-pool-1-thread-3 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty request body:modifyUser_args(ModifyUserRequest(98945631@163.com,5648794512))
+01-04 11:24:19 745 trans-pool-1-thread-3 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty request header:Optional.empty body:modifyUser_args(ModifyUserRequest(98945631@163.com,5648794512))
+01-04 11:24:19 823 trans-pool-1-thread-3 DEBUG - SQL Preparing: SELECT user_name as userName,telephone,status,integral,created_at as createdAt,updated_at as updatedAt,email,qq FROM users WHERE id=? args: WrappedArray(JdbcValue(18))
+01-04 11:24:19 926 trans-pool-1-thread-3 DEBUG - SQL result: 1
+01-04 11:24:19 927 trans-pool-1-thread-3 DEBUG - SQL Preparing: SELECT user_name as userName,telephone,status,integral,created_at as createdAt,updated_at as updatedAt,email,qq FROM users WHERE id=? args: WrappedArray(JdbcValue(18))
+01-04 11:24:19 928 trans-pool-1-thread-3 DEBUG - SQL result: 1
+01-04 11:24:19 930 trans-pool-1-thread-3 DEBUG - SQL Preparing: UPDATE users SET qq=?,email=? WHERE id=? args: WrappedArray(JdbcValue(5648794512), JdbcValue(98945631@163.com), JdbcValue(18))
+01-04 11:24:19 974 trans-pool-1-thread-3 DEBUG - SQL result: 1
+01-04 11:24:19 977 trans-pool-1-thread-3 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty response body:modifyUser_result(ModifyUserResponse(quedian,15807109264,(3,冻结用户（涉嫌违规处理冻结期）),1515036111000,None,None))
+01-04 11:24:19 977 trans-pool-1-thread-3 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty response header:Optional.empty body:modifyUser_result(ModifyUserResponse(quedian,15807109264,(3,冻结用户（涉嫌违规处理冻结期）),1515036111000,None,None))
+01-04 11:25:14 807 Thread-8 INFO - {dataSource-1} inited
+01-04 11:25:27 043 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty request body:getServiceMetadata_args()
+01-04 11:25:27 046 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty request header:Optional.empty body:getServiceMetadata_args()
+01-04 11:25:27 062 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty response body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26063)
+01-04 11:25:27 062 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty response header:Optional.empty body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26063)
+01-04 11:26:38 991 trans-pool-1-thread-2 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty request body:modifyUser_args(ModifyUserRequest(1536498131@163.com,2659481278))
+01-04 11:26:38 991 trans-pool-1-thread-2 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty request header:Optional.empty body:modifyUser_args(ModifyUserRequest(1536498131@163.com,2659481278))
+01-04 11:37:43 484 trans-pool-1-thread-2 DEBUG - SQL Preparing: SELECT user_name as userName,telephone,status,integral,created_at as createdAt,updated_at as updatedAt,email,qq FROM users WHERE id=? args: WrappedArray(JdbcValue(18))
+01-04 11:37:43 730 trans-pool-1-thread-2 DEBUG - SQL result: 1
+01-04 11:38:10 114 Thread-8 INFO - {dataSource-1} inited
+01-04 11:38:22 487 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty request body:getServiceMetadata_args()
+01-04 11:38:22 490 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty request header:Optional.empty body:getServiceMetadata_args()
+01-04 11:38:22 499 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty response body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26063)
+01-04 11:38:22 500 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty response header:Optional.empty body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26063)
+01-04 11:38:49 118 trans-pool-1-thread-2 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty request body:modifyUser_args(ModifyUserRequest(465897946@163.com,46598576))
+01-04 11:38:49 118 trans-pool-1-thread-2 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty request header:Optional.empty body:modifyUser_args(ModifyUserRequest(465897946@163.com,46598576))
+01-04 11:38:49 198 trans-pool-1-thread-2 DEBUG - SQL Preparing: SELECT user_name as userName,telephone,status,integral,created_at as createdAt,updated_at as updatedAt,email,qq FROM users WHERE id=? args: WrappedArray(JdbcValue(18))
+01-04 11:38:49 310 trans-pool-1-thread-2 DEBUG - SQL result: 1
+01-04 11:38:49 315 trans-pool-1-thread-2 ERROR - 您的账号存在问题，请联系管理员
+java.lang.RuntimeException: 您的账号存在问题，请联系管理员
+	at com.today.user.UserServiceImpl.preCheckModifyUser(UserServiceImpl.scala:221) ~[classes/:na]
+	at com.today.user.UserServiceImpl.modifyUser(UserServiceImpl.scala:198) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$modifyUser.getResult(UserServiceCodec.scala:480) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$modifyUser.getResult(UserServiceCodec.scala:470) ~[classes/:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.lambda$process$0(SoaCommonBaseProcessor.java:84) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.DispatchFilter.doFilter(DispatchFilter.java:27) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SlowTimeServiceFilter.doFilter(SlowTimeServiceFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.ProviderTimesFilter.doFilter(ProviderTimesFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SoaGlobalTransactionalFilter.doFilter(SoaGlobalTransactionalFilter.java:50) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.process(SoaCommonBaseProcessor.java:103) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.processRequest(SoaServerHandler.java:299) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.lambda$readRequestHeader$5(SoaServerHandler.java:130) ~[dapeng-container-1.3.0.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+01-04 12:08:11 423 Thread-8 INFO - {dataSource-1} inited
+01-04 12:08:23 784 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty request body:getServiceMetadata_args()
+01-04 12:08:23 787 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty request header:Optional.empty body:getServiceMetadata_args()
+01-04 12:08:23 797 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty response body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26063)
+01-04 12:08:23 797 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty response header:Optional.empty body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26063)
+01-04 12:13:59 274 Thread-8 INFO - {dataSource-1} inited
+01-04 12:14:11 618 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty request body:getServiceMetadata_args()
+01-04 12:14:11 621 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty request header:Optional.empty body:getServiceMetadata_args()
+01-04 12:14:11 631 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty response body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26314)
+01-04 12:14:11 631 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty response header:Optional.empty body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26314)
+01-04 12:18:43 816 Thread-8 INFO - {dataSource-1} inited
+01-04 12:18:56 103 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty request body:getServiceMetadata_args()
+01-04 12:18:56 105 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty request header:Optional.empty body:getServiceMetadata_args()
+01-04 12:18:56 115 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty response body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26314)
+01-04 12:18:56 115 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty response header:Optional.empty body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26314)
+01-04 12:19:43 108 trans-pool-1-thread-2 INFO - com.today.api.user.service.UserService 1.0.0 registerUser operatorId:Optional.empty operatorName:Optional.empty request body:registerUser_args(RegisterUserRequest(isadoidaos,156487944aaa,135796404614))
+01-04 12:19:43 108 trans-pool-1-thread-2 DEBUG - com.today.api.user.service.UserService 1.0.0 registerUser Optional.empty request header:Optional.empty body:registerUser_args(RegisterUserRequest(isadoidaos,156487944aaa,135796404614))
+01-04 12:19:43 181 trans-pool-1-thread-2 DEBUG - SQL Preparing: SELECT COUNT(*) FROM users WHERE telephone=? args: WrappedArray(JdbcValue(135796404614))
+01-04 12:19:43 262 trans-pool-1-thread-2 DEBUG - SQL result: 0
+01-04 12:19:43 265 trans-pool-1-thread-2 DEBUG - SQL Preparing: INSERT INTO users(user_name,password,telephone,integral,created_at,created_by,updated_by) VALUES (?,?,?,0,?,1,1) args: WrappedArray(JdbcValue(isadoidaos), JdbcValue(156487944aaa), JdbcValue(135796404614), JdbcValue(Thu Jan 04 12:19:43 CST 2018))
+01-04 12:19:43 309 trans-pool-1-thread-2 DEBUG - SQL result: 1
+01-04 12:19:43 311 trans-pool-1-thread-2 INFO - com.today.api.user.service.UserService 1.0.0 registerUser operatorId:Optional.empty operatorName:Optional.empty response body:registerUser_result(RegisterUserResponse(isadoidaos,135796404614,(1,已激活),1515039583310))
+01-04 12:19:43 311 trans-pool-1-thread-2 DEBUG - com.today.api.user.service.UserService 1.0.0 registerUser Optional.empty response header:Optional.empty body:registerUser_result(RegisterUserResponse(isadoidaos,135796404614,(1,已激活),1515039583310))
+01-04 12:20:10 642 trans-pool-1-thread-3 INFO - com.today.api.user.service.UserService 1.0.0 registerUser operatorId:Optional.empty operatorName:Optional.empty request body:registerUser_args(RegisterUserRequest(cxzcxz,156,135796404614))
+01-04 12:20:10 642 trans-pool-1-thread-3 DEBUG - com.today.api.user.service.UserService 1.0.0 registerUser Optional.empty request header:Optional.empty body:registerUser_args(RegisterUserRequest(cxzcxz,156,135796404614))
+01-04 12:20:10 642 trans-pool-1-thread-3 DEBUG - SQL Preparing: SELECT COUNT(*) FROM users WHERE telephone=? args: WrappedArray(JdbcValue(135796404614))
+01-04 12:20:10 643 trans-pool-1-thread-3 DEBUG - SQL result: 0
+01-04 12:20:10 649 trans-pool-1-thread-3 ERROR - 号码被使用
+java.lang.RuntimeException: 号码被使用
+	at com.today.user.UserServiceImpl.preCheckRegisterUser(UserServiceImpl.scala:84) ~[classes/:na]
+	at com.today.user.UserServiceImpl.registerUser(UserServiceImpl.scala:65) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$registerUser.getResult(UserServiceCodec.scala:169) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$registerUser.getResult(UserServiceCodec.scala:159) ~[classes/:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.lambda$process$0(SoaCommonBaseProcessor.java:84) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.DispatchFilter.doFilter(DispatchFilter.java:27) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SlowTimeServiceFilter.doFilter(SlowTimeServiceFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.ProviderTimesFilter.doFilter(ProviderTimesFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SoaGlobalTransactionalFilter.doFilter(SoaGlobalTransactionalFilter.java:50) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.process(SoaCommonBaseProcessor.java:103) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.processRequest(SoaServerHandler.java:299) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.lambda$readRequestHeader$5(SoaServerHandler.java:130) ~[dapeng-container-1.3.0.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+01-04 12:20:26 896 trans-pool-1-thread-4 INFO - com.today.api.user.service.UserService 1.0.0 registerUser operatorId:Optional.empty operatorName:Optional.empty request body:registerUser_args(RegisterUserRequest(cxzcxz,156,135796404644))
+01-04 12:20:26 896 trans-pool-1-thread-4 DEBUG - com.today.api.user.service.UserService 1.0.0 registerUser Optional.empty request header:Optional.empty body:registerUser_args(RegisterUserRequest(cxzcxz,156,135796404644))
+01-04 12:20:26 897 trans-pool-1-thread-4 DEBUG - SQL Preparing: SELECT COUNT(*) FROM users WHERE telephone=? args: WrappedArray(JdbcValue(135796404644))
+01-04 12:20:26 898 trans-pool-1-thread-4 DEBUG - SQL result: 0
+01-04 12:20:26 899 trans-pool-1-thread-4 ERROR - 密码输入不正确
+java.lang.RuntimeException: 密码输入不正确
+	at com.today.user.UserServiceImpl.preCheckRegisterUser(UserServiceImpl.scala:87) ~[classes/:na]
+	at com.today.user.UserServiceImpl.registerUser(UserServiceImpl.scala:65) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$registerUser.getResult(UserServiceCodec.scala:169) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$registerUser.getResult(UserServiceCodec.scala:159) ~[classes/:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.lambda$process$0(SoaCommonBaseProcessor.java:84) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.DispatchFilter.doFilter(DispatchFilter.java:27) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SlowTimeServiceFilter.doFilter(SlowTimeServiceFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.ProviderTimesFilter.doFilter(ProviderTimesFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SoaGlobalTransactionalFilter.doFilter(SoaGlobalTransactionalFilter.java:50) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.process(SoaCommonBaseProcessor.java:103) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.processRequest(SoaServerHandler.java:299) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.lambda$readRequestHeader$5(SoaServerHandler.java:130) ~[dapeng-container-1.3.0.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+01-04 14:05:55 359 Thread-8 INFO - {dataSource-1} inited
+01-04 14:06:07 815 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty request body:getServiceMetadata_args()
+01-04 14:06:07 818 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty request header:Optional.empty body:getServiceMetadata_args()
+01-04 14:06:07 829 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty response body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26314)
+01-04 14:06:07 829 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty response header:Optional.empty body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26314)
+01-04 14:12:41 368 Thread-8 INFO - {dataSource-1} inited
+01-04 14:12:53 641 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty request body:getServiceMetadata_args()
+01-04 14:12:53 645 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty request header:Optional.empty body:getServiceMetadata_args()
+01-04 14:12:53 656 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty response body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26314)
+01-04 14:12:53 656 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty response header:Optional.empty body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26314)
+01-04 14:14:26 202 trans-pool-1-thread-2 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty request body:modifyUser_args(ModifyUserRequest(19,78945612314@qq.com,78945612314))
+01-04 14:14:26 202 trans-pool-1-thread-2 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty request header:Optional.empty body:modifyUser_args(ModifyUserRequest(19,78945612314@qq.com,78945612314))
+01-04 14:14:26 282 trans-pool-1-thread-2 DEBUG - SQL Preparing: SELECT user_name as userName,telephone,status,integral,created_at as createdAt,updated_at as updatedAt,email,qq FROM users WHERE id=? args: WrappedArray(JdbcValue(19))
+01-04 14:14:26 391 trans-pool-1-thread-2 DEBUG - SQL result: 1
+01-04 14:14:26 396 trans-pool-1-thread-2 ERROR - 您的账号存在问题，请联系管理员
+java.lang.RuntimeException: 您的账号存在问题，请联系管理员
+	at com.today.user.UserServiceImpl.preCheckModifyUser(UserServiceImpl.scala:219) ~[classes/:na]
+	at com.today.user.UserServiceImpl.modifyUser(UserServiceImpl.scala:198) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$modifyUser.getResult(UserServiceCodec.scala:481) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$modifyUser.getResult(UserServiceCodec.scala:471) ~[classes/:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.lambda$process$0(SoaCommonBaseProcessor.java:84) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.DispatchFilter.doFilter(DispatchFilter.java:27) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SlowTimeServiceFilter.doFilter(SlowTimeServiceFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.ProviderTimesFilter.doFilter(ProviderTimesFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SoaGlobalTransactionalFilter.doFilter(SoaGlobalTransactionalFilter.java:50) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.process(SoaCommonBaseProcessor.java:103) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.processRequest(SoaServerHandler.java:299) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.lambda$readRequestHeader$5(SoaServerHandler.java:130) ~[dapeng-container-1.3.0.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+01-04 14:14:40 190 trans-pool-1-thread-3 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty request body:modifyUser_args(ModifyUserRequest(19,78945612314@qq.com,78945612314))
+01-04 14:14:40 190 trans-pool-1-thread-3 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty request header:Optional.empty body:modifyUser_args(ModifyUserRequest(19,78945612314@qq.com,78945612314))
+01-04 14:14:40 190 trans-pool-1-thread-3 DEBUG - SQL Preparing: SELECT user_name as userName,telephone,status,integral,created_at as createdAt,updated_at as updatedAt,email,qq FROM users WHERE id=? args: WrappedArray(JdbcValue(19))
+01-04 14:14:40 192 trans-pool-1-thread-3 DEBUG - SQL result: 1
+01-04 14:14:40 192 trans-pool-1-thread-3 DEBUG - SQL Preparing: SELECT user_name as userName,telephone,status,integral,created_at as createdAt,updated_at as updatedAt,email,qq FROM users WHERE id=? args: WrappedArray(JdbcValue(19))
+01-04 14:14:40 193 trans-pool-1-thread-3 DEBUG - SQL result: 1
+01-04 14:14:40 195 trans-pool-1-thread-3 DEBUG - SQL Preparing: UPDATE users SET qq=?,email=? WHERE id=? args: WrappedArray(JdbcValue(78945612314), JdbcValue(78945612314@qq.com), JdbcValue(19))
+01-04 14:14:40 229 trans-pool-1-thread-3 DEBUG - SQL result: 1
+01-04 14:14:40 232 trans-pool-1-thread-3 INFO - com.today.api.user.service.UserService 1.0.0 modifyUser operatorId:Optional.empty operatorName:Optional.empty response body:modifyUser_result(ModifyUserResponse(isadoidaos,135796404614,(1,已激活),1515046475000,None,None))
+01-04 14:14:40 232 trans-pool-1-thread-3 DEBUG - com.today.api.user.service.UserService 1.0.0 modifyUser Optional.empty response header:Optional.empty body:modifyUser_result(ModifyUserResponse(isadoidaos,135796404614,(1,已激活),1515046475000,None,None))
+01-04 14:46:15 338 Thread-8 INFO - {dataSource-1} inited
+01-04 14:46:27 652 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty request body:getServiceMetadata_args()
+01-04 14:46:27 655 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty request header:Optional.empty body:getServiceMetadata_args()
+01-04 14:46:27 665 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty response body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26314)
+01-04 14:46:27 666 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty response header:Optional.empty body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26314)
+01-04 14:47:20 396 trans-pool-1-thread-2 INFO - com.today.api.user.service.UserService 1.0.0 freezeUser operatorId:Optional.empty operatorName:Optional.empty request body:freezeUser_args(FreezeUserRequest(17,你要被冻结了))
+01-04 14:47:20 396 trans-pool-1-thread-2 DEBUG - com.today.api.user.service.UserService 1.0.0 freezeUser Optional.empty request header:Optional.empty body:freezeUser_args(FreezeUserRequest(17,你要被冻结了))
+01-04 14:47:20 470 trans-pool-1-thread-2 DEBUG - SQL Preparing: SELECT id as userId,status,remark FROM users WHERE id=? args: WrappedArray(JdbcValue(17))
+01-04 14:47:20 568 trans-pool-1-thread-2 DEBUG - SQL result: 1
+01-04 14:47:20 569 trans-pool-1-thread-2 DEBUG - SQL Preparing: SELECT id as userId,status,remark FROM users WHERE id=? args: WrappedArray(JdbcValue(17))
+01-04 14:47:20 570 trans-pool-1-thread-2 DEBUG - SQL result: 1
+01-04 14:47:20 573 trans-pool-1-thread-2 INFO - com.today.api.user.service.UserService 1.0.0 freezeUser operatorId:Optional.empty operatorName:Optional.empty response body:freezeUser_result(FreezeUserResponse(17,(1,已激活),))
+01-04 14:47:20 573 trans-pool-1-thread-2 DEBUG - com.today.api.user.service.UserService 1.0.0 freezeUser Optional.empty response header:Optional.empty body:freezeUser_result(FreezeUserResponse(17,(1,已激活),))
+01-04 14:56:23 749 Thread-8 INFO - {dataSource-1} inited
+01-04 14:56:36 142 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty request body:getServiceMetadata_args()
+01-04 14:56:36 145 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty request header:Optional.empty body:getServiceMetadata_args()
+01-04 14:56:36 156 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty response body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26314)
+01-04 14:56:36 156 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty response header:Optional.empty body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26314)
+01-04 14:57:22 702 trans-pool-1-thread-2 INFO - com.today.api.user.service.UserService 1.0.0 freezeUser operatorId:Optional.empty operatorName:Optional.empty request body:freezeUser_args(FreezeUserRequest(17,你被冻结了，没有理由哦))
+01-04 14:57:22 703 trans-pool-1-thread-2 DEBUG - com.today.api.user.service.UserService 1.0.0 freezeUser Optional.empty request header:Optional.empty body:freezeUser_args(FreezeUserRequest(17,你被冻结了，没有理由哦))
+01-04 14:57:22 777 trans-pool-1-thread-2 DEBUG - SQL Preparing: SELECT id as userId,status,remark FROM users WHERE id=? args: WrappedArray(JdbcValue(17))
+01-04 14:57:22 875 trans-pool-1-thread-2 DEBUG - SQL result: 1
+01-04 14:57:22 876 trans-pool-1-thread-2 DEBUG - SQL Preparing: SELECT id as userId,status,remark FROM users WHERE id=? args: WrappedArray(JdbcValue(17))
+01-04 14:57:22 877 trans-pool-1-thread-2 DEBUG - SQL result: 1
+01-04 14:57:22 878 trans-pool-1-thread-2 DEBUG - SQL Preparing: UPDATE users SET status = 3 , remark = ? where id = ? args: WrappedArray(JdbcValue(你被冻结了，没有理由哦), JdbcValue(17))
+01-04 14:57:22 908 trans-pool-1-thread-2 DEBUG - SQL result: 1
+01-04 14:57:22 910 trans-pool-1-thread-2 INFO - com.today.api.user.service.UserService 1.0.0 freezeUser operatorId:Optional.empty operatorName:Optional.empty response body:freezeUser_result(FreezeUserResponse(17,(1,已激活),))
+01-04 14:57:22 911 trans-pool-1-thread-2 DEBUG - com.today.api.user.service.UserService 1.0.0 freezeUser Optional.empty response header:Optional.empty body:freezeUser_result(FreezeUserResponse(17,(1,已激活),))
+01-04 14:57:54 551 trans-pool-1-thread-3 INFO - com.today.api.user.service.UserService 1.0.0 freezeUser operatorId:Optional.empty operatorName:Optional.empty request body:freezeUser_args(FreezeUserRequest(898,你被冻结了，没有理由哦))
+01-04 14:57:54 551 trans-pool-1-thread-3 DEBUG - com.today.api.user.service.UserService 1.0.0 freezeUser Optional.empty request header:Optional.empty body:freezeUser_args(FreezeUserRequest(898,你被冻结了，没有理由哦))
+01-04 14:57:54 552 trans-pool-1-thread-3 DEBUG - SQL Preparing: SELECT id as userId,status,remark FROM users WHERE id=? args: WrappedArray(JdbcValue(898))
+01-04 14:57:54 553 trans-pool-1-thread-3 DEBUG - SQL result: 0
+01-04 14:57:54 560 trans-pool-1-thread-3 ERROR - head of empty list
+java.util.NoSuchElementException: head of empty list
+	at scala.collection.immutable.Nil$.head(List.scala:428) ~[scala-library.jar:1.0.0]
+	at scala.collection.immutable.Nil$.head(List.scala:425) ~[scala-library.jar:1.0.0]
+	at com.today.user.repository.UserRepository.findUnFreezeUserById(UserRepository.scala:45) ~[classes/:na]
+	at com.today.user.UserServiceImpl.preCheckFreezeUser(UserServiceImpl.scala:264) ~[classes/:na]
+	at com.today.user.UserServiceImpl.freezeUser(UserServiceImpl.scala:256) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$freezeUser.getResult(UserServiceCodec.scala:637) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$freezeUser.getResult(UserServiceCodec.scala:627) ~[classes/:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.lambda$process$0(SoaCommonBaseProcessor.java:84) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.DispatchFilter.doFilter(DispatchFilter.java:27) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SlowTimeServiceFilter.doFilter(SlowTimeServiceFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.ProviderTimesFilter.doFilter(ProviderTimesFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SoaGlobalTransactionalFilter.doFilter(SoaGlobalTransactionalFilter.java:50) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.process(SoaCommonBaseProcessor.java:103) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.processRequest(SoaServerHandler.java:299) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.lambda$readRequestHeader$5(SoaServerHandler.java:130) ~[dapeng-container-1.3.0.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+01-04 15:12:53 372 Thread-8 INFO - {dataSource-1} inited
+01-04 15:13:05 843 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty request body:getServiceMetadata_args()
+01-04 15:13:05 845 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty request header:Optional.empty body:getServiceMetadata_args()
+01-04 15:13:05 855 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty response body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26314)
+01-04 15:13:05 855 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty response header:Optional.empty body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26314)
+01-04 15:13:37 691 trans-pool-1-thread-2 INFO - com.today.api.user.service.UserService 1.0.0 freezeUser operatorId:Optional.empty operatorName:Optional.empty request body:freezeUser_args(FreezeUserRequest(9895,sdasdas))
+01-04 15:13:37 692 trans-pool-1-thread-2 DEBUG - com.today.api.user.service.UserService 1.0.0 freezeUser Optional.empty request header:Optional.empty body:freezeUser_args(FreezeUserRequest(9895,sdasdas))
+01-04 15:13:37 764 trans-pool-1-thread-2 DEBUG - SQL Preparing: SELECT COUNT(*) FROM users WHERE id=? args: WrappedArray(JdbcValue(9895))
+01-04 15:13:37 845 trans-pool-1-thread-2 DEBUG - SQL result: 0
+01-04 15:13:37 852 trans-pool-1-thread-2 ERROR - 没有这个ID的账号
+java.lang.RuntimeException: 没有这个ID的账号
+	at com.today.user.UserServiceImpl.preCheckFreezeUser(UserServiceImpl.scala:265) ~[classes/:na]
+	at com.today.user.UserServiceImpl.freezeUser(UserServiceImpl.scala:256) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$freezeUser.getResult(UserServiceCodec.scala:637) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$freezeUser.getResult(UserServiceCodec.scala:627) ~[classes/:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.lambda$process$0(SoaCommonBaseProcessor.java:84) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.DispatchFilter.doFilter(DispatchFilter.java:27) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SlowTimeServiceFilter.doFilter(SlowTimeServiceFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.ProviderTimesFilter.doFilter(ProviderTimesFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SoaGlobalTransactionalFilter.doFilter(SoaGlobalTransactionalFilter.java:50) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.process(SoaCommonBaseProcessor.java:103) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.processRequest(SoaServerHandler.java:299) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.lambda$readRequestHeader$5(SoaServerHandler.java:130) ~[dapeng-container-1.3.0.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+01-04 15:14:12 406 trans-pool-1-thread-3 INFO - com.today.api.user.service.UserService 1.0.0 freezeUser operatorId:Optional.empty operatorName:Optional.empty request body:freezeUser_args(FreezeUserRequest(19,你被冻结了，是不是做了不好的事？))
+01-04 15:14:12 407 trans-pool-1-thread-3 DEBUG - com.today.api.user.service.UserService 1.0.0 freezeUser Optional.empty request header:Optional.empty body:freezeUser_args(FreezeUserRequest(19,你被冻结了，是不是做了不好的事？))
+01-04 15:14:12 407 trans-pool-1-thread-3 DEBUG - SQL Preparing: SELECT COUNT(*) FROM users WHERE id=? args: WrappedArray(JdbcValue(19))
+01-04 15:14:12 408 trans-pool-1-thread-3 DEBUG - SQL result: 0
+01-04 15:14:12 413 trans-pool-1-thread-3 DEBUG - SQL Preparing: SELECT id as userId,status,remark FROM users WHERE id=? args: WrappedArray(JdbcValue(19))
+01-04 15:14:12 435 trans-pool-1-thread-3 DEBUG - SQL result: 1
+01-04 15:14:12 436 trans-pool-1-thread-3 DEBUG - SQL Preparing: SELECT id as userId,status,remark FROM users WHERE id=? args: WrappedArray(JdbcValue(19))
+01-04 15:14:12 437 trans-pool-1-thread-3 DEBUG - SQL result: 1
+01-04 15:14:12 438 trans-pool-1-thread-3 DEBUG - SQL Preparing: UPDATE users SET status = 3 , remark = ? where id = ? args: WrappedArray(JdbcValue(你被冻结了，是不是做了不好的事？), JdbcValue(19))
+01-04 15:14:12 472 trans-pool-1-thread-3 DEBUG - SQL result: 1
+01-04 15:14:12 474 trans-pool-1-thread-3 INFO - com.today.api.user.service.UserService 1.0.0 freezeUser operatorId:Optional.empty operatorName:Optional.empty response body:freezeUser_result(FreezeUserResponse(19,(1,已激活),))
+01-04 15:14:12 474 trans-pool-1-thread-3 DEBUG - com.today.api.user.service.UserService 1.0.0 freezeUser Optional.empty response header:Optional.empty body:freezeUser_result(FreezeUserResponse(19,(1,已激活),))
+01-04 15:21:52 780 Thread-8 INFO - {dataSource-1} inited
+01-04 15:22:05 057 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty request body:getServiceMetadata_args()
+01-04 15:22:05 059 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty request header:Optional.empty body:getServiceMetadata_args()
+01-04 15:22:05 068 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty response body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26314)
+01-04 15:22:05 069 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty response header:Optional.empty body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26314)
+01-04 15:34:52 249 Thread-8 INFO - {dataSource-1} inited
+01-04 15:35:04 470 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty request body:getServiceMetadata_args()
+01-04 15:35:04 473 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty request header:Optional.empty body:getServiceMetadata_args()
+01-04 15:35:04 484 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty response body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26314)
+01-04 15:35:04 484 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty response header:Optional.empty body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26314)
+01-04 15:35:47 602 trans-pool-1-thread-2 INFO - com.today.api.user.service.UserService 1.0.0 registerUser operatorId:Optional.empty operatorName:Optional.empty request body:registerUser_args(RegisterUserRequest(tuidusi,456897452ss,158701349534))
+01-04 15:35:47 602 trans-pool-1-thread-2 DEBUG - com.today.api.user.service.UserService 1.0.0 registerUser Optional.empty request header:Optional.empty body:registerUser_args(RegisterUserRequest(tuidusi,456897452ss,158701349534))
+01-04 15:35:47 678 trans-pool-1-thread-2 DEBUG - SQL Preparing: SELECT COUNT(*) FROM users WHERE telephone=? args: WrappedArray(JdbcValue(158701349534))
+01-04 15:35:47 762 trans-pool-1-thread-2 DEBUG - SQL result: 0
+01-04 15:35:47 765 trans-pool-1-thread-2 DEBUG - SQL Preparing: INSERT INTO users(user_name,password,telephone,integral,created_at,created_by,updated_by) VALUES (?,?,?,0,?,1,1) args: WrappedArray(JdbcValue(tuidusi), JdbcValue(456897452ss), JdbcValue(158701349534), JdbcValue(Thu Jan 04 15:35:47 CST 2018))
+01-04 15:35:47 811 trans-pool-1-thread-2 DEBUG - SQL result: 1
+01-04 15:35:47 813 trans-pool-1-thread-2 INFO - com.today.api.user.service.UserService 1.0.0 registerUser operatorId:Optional.empty operatorName:Optional.empty response body:registerUser_result(RegisterUserResponse(tuidusi,158701349534,(1,已激活),1515051347812))
+01-04 15:35:47 813 trans-pool-1-thread-2 DEBUG - com.today.api.user.service.UserService 1.0.0 registerUser Optional.empty response header:Optional.empty body:registerUser_result(RegisterUserResponse(tuidusi,158701349534,(1,已激活),1515051347812))
+01-04 15:36:07 771 trans-pool-1-thread-3 INFO - com.today.api.user.service.UserService 1.0.0 registerUser operatorId:Optional.empty operatorName:Optional.empty request body:registerUser_args(RegisterUserRequest(tuslqsx,96548123asx,135894612478))
+01-04 15:36:07 771 trans-pool-1-thread-3 DEBUG - com.today.api.user.service.UserService 1.0.0 registerUser Optional.empty request header:Optional.empty body:registerUser_args(RegisterUserRequest(tuslqsx,96548123asx,135894612478))
+01-04 15:36:07 772 trans-pool-1-thread-3 DEBUG - SQL Preparing: SELECT COUNT(*) FROM users WHERE telephone=? args: WrappedArray(JdbcValue(135894612478))
+01-04 15:36:07 773 trans-pool-1-thread-3 DEBUG - SQL result: 0
+01-04 15:36:07 774 trans-pool-1-thread-3 DEBUG - SQL Preparing: INSERT INTO users(user_name,password,telephone,integral,created_at,created_by,updated_by) VALUES (?,?,?,0,?,1,1) args: WrappedArray(JdbcValue(tuslqsx), JdbcValue(96548123asx), JdbcValue(135894612478), JdbcValue(Thu Jan 04 15:36:07 CST 2018))
+01-04 15:36:07 815 trans-pool-1-thread-3 DEBUG - SQL result: 1
+01-04 15:36:07 815 trans-pool-1-thread-3 INFO - com.today.api.user.service.UserService 1.0.0 registerUser operatorId:Optional.empty operatorName:Optional.empty response body:registerUser_result(RegisterUserResponse(tuslqsx,135894612478,(1,已激活),1515051367815))
+01-04 15:36:07 815 trans-pool-1-thread-3 DEBUG - com.today.api.user.service.UserService 1.0.0 registerUser Optional.empty response header:Optional.empty body:registerUser_result(RegisterUserResponse(tuslqsx,135894612478,(1,已激活),1515051367815))
+01-04 15:36:49 636 trans-pool-1-thread-4 INFO - com.today.api.user.service.UserService 1.0.0 blackUser operatorId:Optional.empty operatorName:Optional.empty request body:blackUser_args(BlackUserRequest(4981,dsds))
+01-04 15:36:49 637 trans-pool-1-thread-4 DEBUG - com.today.api.user.service.UserService 1.0.0 blackUser Optional.empty request header:Optional.empty body:blackUser_args(BlackUserRequest(4981,dsds))
+01-04 15:36:49 637 trans-pool-1-thread-4 DEBUG - SQL Preparing: SELECT COUNT(*) FROM users WHERE id=? args: WrappedArray(JdbcValue(4981))
+01-04 15:36:49 638 trans-pool-1-thread-4 DEBUG - SQL result: 0
+01-04 15:36:49 644 trans-pool-1-thread-4 ERROR - 没有这个ID的账号
+java.lang.RuntimeException: 没有这个ID的账号
+	at com.today.user.UserServiceImpl.preCheckBlackUser(UserServiceImpl.scala:318) ~[classes/:na]
+	at com.today.user.UserServiceImpl.blackUser(UserServiceImpl.scala:309) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$blackUser.getResult(UserServiceCodec.scala:793) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$blackUser.getResult(UserServiceCodec.scala:783) ~[classes/:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.lambda$process$0(SoaCommonBaseProcessor.java:84) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.DispatchFilter.doFilter(DispatchFilter.java:27) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SlowTimeServiceFilter.doFilter(SlowTimeServiceFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.ProviderTimesFilter.doFilter(ProviderTimesFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SoaGlobalTransactionalFilter.doFilter(SoaGlobalTransactionalFilter.java:50) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.process(SoaCommonBaseProcessor.java:103) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.processRequest(SoaServerHandler.java:299) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.lambda$readRequestHeader$5(SoaServerHandler.java:130) ~[dapeng-container-1.3.0.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+01-04 15:37:19 345 trans-pool-1-thread-5 INFO - com.today.api.user.service.UserService 1.0.0 blackUser operatorId:Optional.empty operatorName:Optional.empty request body:blackUser_args(BlackUserRequest(20,你被拉黑了哦))
+01-04 15:37:19 345 trans-pool-1-thread-5 DEBUG - com.today.api.user.service.UserService 1.0.0 blackUser Optional.empty request header:Optional.empty body:blackUser_args(BlackUserRequest(20,你被拉黑了哦))
+01-04 15:37:19 346 trans-pool-1-thread-5 DEBUG - SQL Preparing: SELECT COUNT(*) FROM users WHERE id=? args: WrappedArray(JdbcValue(20))
+01-04 15:37:19 346 trans-pool-1-thread-5 DEBUG - SQL result: 0
+01-04 15:37:19 351 trans-pool-1-thread-5 DEBUG - SQL Preparing: SELECT id as userId,status,remark FROM users WHERE id=? args: WrappedArray(JdbcValue(20))
+01-04 15:37:19 374 trans-pool-1-thread-5 DEBUG - SQL result: 1
+01-04 15:37:19 375 trans-pool-1-thread-5 DEBUG - SQL Preparing: SELECT id as userId,status,remark FROM users WHERE id=? args: WrappedArray(JdbcValue(20))
+01-04 15:37:19 375 trans-pool-1-thread-5 DEBUG - SQL result: 1
+01-04 15:37:19 376 trans-pool-1-thread-5 DEBUG - SQL Preparing: UPDATE users SET status = 4 , remark = ? where id = ? args: WrappedArray(JdbcValue(你被拉黑了哦), JdbcValue(20))
+01-04 15:37:19 415 trans-pool-1-thread-5 DEBUG - SQL result: 1
+01-04 15:37:19 417 trans-pool-1-thread-5 INFO - com.today.api.user.service.UserService 1.0.0 blackUser operatorId:Optional.empty operatorName:Optional.empty response body:blackUser_result(BlackUserResponse(20,(1,已激活),))
+01-04 15:37:19 417 trans-pool-1-thread-5 DEBUG - com.today.api.user.service.UserService 1.0.0 blackUser Optional.empty response header:Optional.empty body:blackUser_result(BlackUserResponse(20,(1,已激活),))
+01-04 15:40:42 558 Thread-8 INFO - {dataSource-1} inited
+01-04 15:40:54 829 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty request body:getServiceMetadata_args()
+01-04 15:40:54 832 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty request header:Optional.empty body:getServiceMetadata_args()
+01-04 15:40:54 845 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty response body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26314)
+01-04 15:40:54 845 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty response header:Optional.empty body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26314)
+01-04 17:27:36 851 Thread-8 INFO - {dataSource-1} inited
+01-04 17:27:49 224 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty request body:getServiceMetadata_args()
+01-04 17:27:49 227 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty request header:Optional.empty body:getServiceMetadata_args()
+01-04 17:27:49 237 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty response body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26314)
+01-04 17:27:49 237 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty response header:Optional.empty body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26314)
+01-04 17:28:13 282 trans-pool-1-thread-2 INFO - com.today.api.user.service.UserService 1.0.0 changeUserIntegral operatorId:Optional.empty operatorName:Optional.empty request body:changeUserIntegral_args(ChangeIntegralRequest(4548,12,(1,增加流水),(1,完善个人资料)))
+01-04 17:28:13 283 trans-pool-1-thread-2 DEBUG - com.today.api.user.service.UserService 1.0.0 changeUserIntegral Optional.empty request header:Optional.empty body:changeUserIntegral_args(ChangeIntegralRequest(4548,12,(1,增加流水),(1,完善个人资料)))
+01-04 17:28:13 353 trans-pool-1-thread-2 DEBUG - SQL Preparing: SELECT COUNT(*) FROM users WHERE id=? args: WrappedArray(JdbcValue(4548))
+01-04 17:28:13 430 trans-pool-1-thread-2 DEBUG - SQL result: 0
+01-04 17:28:13 436 trans-pool-1-thread-2 ERROR - 没有这个ID的账号
+java.lang.RuntimeException: 没有这个ID的账号
+	at com.today.user.UserServiceImpl.preCheckStatus(UserServiceImpl.scala:371) ~[classes/:na]
+	at com.today.user.UserServiceImpl.changeUserIntegral(UserServiceImpl.scala:362) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$changeUserIntegral.getResult(UserServiceCodec.scala:943) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$changeUserIntegral.getResult(UserServiceCodec.scala:933) ~[classes/:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.lambda$process$0(SoaCommonBaseProcessor.java:84) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.DispatchFilter.doFilter(DispatchFilter.java:27) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SlowTimeServiceFilter.doFilter(SlowTimeServiceFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.ProviderTimesFilter.doFilter(ProviderTimesFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SoaGlobalTransactionalFilter.doFilter(SoaGlobalTransactionalFilter.java:50) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.process(SoaCommonBaseProcessor.java:103) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.processRequest(SoaServerHandler.java:299) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.lambda$readRequestHeader$5(SoaServerHandler.java:130) ~[dapeng-container-1.3.0.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+01-04 17:28:32 719 trans-pool-1-thread-3 INFO - com.today.api.user.service.UserService 1.0.0 changeUserIntegral operatorId:Optional.empty operatorName:Optional.empty request body:changeUserIntegral_args(ChangeIntegralRequest(21,12,(1,增加流水),(1,完善个人资料)))
+01-04 17:28:32 720 trans-pool-1-thread-3 DEBUG - com.today.api.user.service.UserService 1.0.0 changeUserIntegral Optional.empty request header:Optional.empty body:changeUserIntegral_args(ChangeIntegralRequest(21,12,(1,增加流水),(1,完善个人资料)))
+01-04 17:28:32 720 trans-pool-1-thread-3 DEBUG - SQL Preparing: SELECT COUNT(*) FROM users WHERE id=? args: WrappedArray(JdbcValue(21))
+01-04 17:28:32 721 trans-pool-1-thread-3 DEBUG - SQL result: 0
+01-04 17:28:32 721 trans-pool-1-thread-3 DEBUG - SQL Preparing: SELECT status FROM users WHERE id=? args: WrappedArray(JdbcValue(21))
+01-04 17:28:32 722 trans-pool-1-thread-3 DEBUG - SQL result: 0
+01-04 17:28:32 724 trans-pool-1-thread-3 DEBUG - SQL Preparing: SELECT integral FROM users WHERE id=? args: WrappedArray(JdbcValue(21))
+01-04 17:28:32 725 trans-pool-1-thread-3 DEBUG - SQL result: 0
+01-04 17:28:32 730 trans-pool-1-thread-3 DEBUG - SQL Preparing: UPDATE users SET integral=? WHERE id=? args: WrappedArray(JdbcValue(12), JdbcValue(21))
+01-04 17:28:32 762 trans-pool-1-thread-3 DEBUG - SQL result: 1
+01-04 17:28:32 763 trans-pool-1-thread-3 DEBUG - SQL Preparing: INSERT INTO integral_journal(user_id,
+                                         integral_type,
+                                         integral_price,
+                                         integral_source,
+                                         integral,
+                                         created_at,
+                                         created_by,
+                                         updated_at,
+                                         updated_by,
+                                         remark)
+                          VALUES (?,
+                                  ?,
+                                  ?,
+                                  ?,
+                                  ?,
+                                  now(),
+                                  1,
+                                  1,
+                                  '') args: WrappedArray(JdbcValue(21), JdbcValue(1), JdbcValue(12), JdbcValue(1), JdbcValue(0))
+01-04 17:28:32 811 trans-pool-1-thread-3 ERROR - Column count doesn't match value count at row 1
+java.sql.SQLException: Column count doesn't match value count at row 1
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:998) ~[mysql-connector-java-5.1.37.jar:5.1.37]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3847) ~[mysql-connector-java-5.1.37.jar:5.1.37]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3783) ~[mysql-connector-java-5.1.37.jar:5.1.37]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2447) ~[mysql-connector-java-5.1.37.jar:5.1.37]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2594) ~[mysql-connector-java-5.1.37.jar:5.1.37]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545) ~[mysql-connector-java-5.1.37.jar:5.1.37]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901) ~[mysql-connector-java-5.1.37.jar:5.1.37]
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2113) ~[mysql-connector-java-5.1.37.jar:5.1.37]
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2049) ~[mysql-connector-java-5.1.37.jar:5.1.37]
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2034) ~[mysql-connector-java-5.1.37.jar:5.1.37]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeUpdate(FilterChainImpl.java:2723) ~[druid-1.0.17.jar:1.0.17]
+	at com.alibaba.druid.filter.FilterAdapter.preparedStatement_executeUpdate(FilterAdapter.java:1069) ~[druid-1.0.17.jar:1.0.17]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_executeUpdate(FilterEventAdapter.java:491) ~[druid-1.0.17.jar:1.0.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeUpdate(FilterChainImpl.java:2721) ~[druid-1.0.17.jar:1.0.17]
+	at com.alibaba.druid.filter.FilterAdapter.preparedStatement_executeUpdate(FilterAdapter.java:1069) ~[druid-1.0.17.jar:1.0.17]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_executeUpdate(FilterEventAdapter.java:491) ~[druid-1.0.17.jar:1.0.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeUpdate(FilterChainImpl.java:2721) ~[druid-1.0.17.jar:1.0.17]
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.executeUpdate(PreparedStatementProxyImpl.java:158) ~[druid-1.0.17.jar:1.0.17]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeUpdate(DruidPooledPreparedStatement.java:253) ~[druid-1.0.17.jar:1.0.17]
+	at wangzx.scala_commons.sql.RichConnection.executeUpdateWithGenerateKey(RichConnection.scala:69) ~[scala-sql_2.12-2.0.0.jar:2.0.0]
+	at wangzx.scala_commons.sql.RichDataSource.$anonfun$executeUpdateWithGenerateKey$1(RichDataSource.scala:27) ~[scala-sql_2.12-2.0.0.jar:2.0.0]
+	at wangzx.scala_commons.sql.RichDataSource.$anonfun$executeUpdateWithGenerateKey$1$adapted(RichDataSource.scala:27) ~[scala-sql_2.12-2.0.0.jar:2.0.0]
+	at wangzx.scala_commons.sql.RichDataSource.withConnection(RichDataSource.scala:12) ~[scala-sql_2.12-2.0.0.jar:2.0.0]
+	at wangzx.scala_commons.sql.RichDataSource.executeUpdateWithGenerateKey(RichDataSource.scala:27) ~[scala-sql_2.12-2.0.0.jar:2.0.0]
+	at wangzx.scala_commons.sql.RichDataSource.executeUpdate(RichDataSource.scala:24) ~[scala-sql_2.12-2.0.0.jar:2.0.0]
+	at com.today.user.repository.UserRepository.insertIntegral_journal(UserRepository.scala:133) ~[classes/:na]
+	at com.today.user.UserServiceImpl.changeUserIntegral(UserServiceImpl.scala:366) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$changeUserIntegral.getResult(UserServiceCodec.scala:943) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$changeUserIntegral.getResult(UserServiceCodec.scala:933) ~[classes/:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.lambda$process$0(SoaCommonBaseProcessor.java:84) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.DispatchFilter.doFilter(DispatchFilter.java:27) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SlowTimeServiceFilter.doFilter(SlowTimeServiceFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.ProviderTimesFilter.doFilter(ProviderTimesFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SoaGlobalTransactionalFilter.doFilter(SoaGlobalTransactionalFilter.java:50) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.process(SoaCommonBaseProcessor.java:103) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.processRequest(SoaServerHandler.java:299) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.lambda$readRequestHeader$5(SoaServerHandler.java:130) ~[dapeng-container-1.3.0.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+01-04 17:32:05 840 Thread-8 INFO - {dataSource-1} inited
+01-04 17:32:18 067 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty request body:getServiceMetadata_args()
+01-04 17:32:18 071 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty request header:Optional.empty body:getServiceMetadata_args()
+01-04 17:32:18 081 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty response body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26314)
+01-04 17:32:18 081 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty response header:Optional.empty body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26314)
+01-04 17:32:47 538 trans-pool-1-thread-2 INFO - com.today.api.user.service.UserService 1.0.0 changeUserIntegral operatorId:Optional.empty operatorName:Optional.empty request body:changeUserIntegral_args(ChangeIntegralRequest(151515,1212,(1,增加流水),(1,完善个人资料)))
+01-04 17:32:47 539 trans-pool-1-thread-2 DEBUG - com.today.api.user.service.UserService 1.0.0 changeUserIntegral Optional.empty request header:Optional.empty body:changeUserIntegral_args(ChangeIntegralRequest(151515,1212,(1,增加流水),(1,完善个人资料)))
+01-04 17:32:47 610 trans-pool-1-thread-2 DEBUG - SQL Preparing: SELECT COUNT(*) FROM users WHERE id=? args: WrappedArray(JdbcValue(151515))
+01-04 17:32:47 690 trans-pool-1-thread-2 DEBUG - SQL result: 0
+01-04 17:32:47 695 trans-pool-1-thread-2 ERROR - 没有这个ID的账号
+java.lang.RuntimeException: 没有这个ID的账号
+	at com.today.user.UserServiceImpl.preCheckStatus(UserServiceImpl.scala:371) ~[classes/:na]
+	at com.today.user.UserServiceImpl.changeUserIntegral(UserServiceImpl.scala:362) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$changeUserIntegral.getResult(UserServiceCodec.scala:943) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$changeUserIntegral.getResult(UserServiceCodec.scala:933) ~[classes/:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.lambda$process$0(SoaCommonBaseProcessor.java:84) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.DispatchFilter.doFilter(DispatchFilter.java:27) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SlowTimeServiceFilter.doFilter(SlowTimeServiceFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.ProviderTimesFilter.doFilter(ProviderTimesFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SoaGlobalTransactionalFilter.doFilter(SoaGlobalTransactionalFilter.java:50) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.process(SoaCommonBaseProcessor.java:103) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.processRequest(SoaServerHandler.java:299) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.lambda$readRequestHeader$5(SoaServerHandler.java:130) ~[dapeng-container-1.3.0.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+01-04 17:32:59 657 trans-pool-1-thread-3 INFO - com.today.api.user.service.UserService 1.0.0 changeUserIntegral operatorId:Optional.empty operatorName:Optional.empty request body:changeUserIntegral_args(ChangeIntegralRequest(21,12,(1,增加流水),(1,完善个人资料)))
+01-04 17:32:59 657 trans-pool-1-thread-3 DEBUG - com.today.api.user.service.UserService 1.0.0 changeUserIntegral Optional.empty request header:Optional.empty body:changeUserIntegral_args(ChangeIntegralRequest(21,12,(1,增加流水),(1,完善个人资料)))
+01-04 17:32:59 658 trans-pool-1-thread-3 DEBUG - SQL Preparing: SELECT COUNT(*) FROM users WHERE id=? args: WrappedArray(JdbcValue(21))
+01-04 17:32:59 658 trans-pool-1-thread-3 DEBUG - SQL result: 0
+01-04 17:32:59 659 trans-pool-1-thread-3 DEBUG - SQL Preparing: SELECT status FROM users WHERE id=? args: WrappedArray(JdbcValue(21))
+01-04 17:32:59 660 trans-pool-1-thread-3 DEBUG - SQL result: 0
+01-04 17:32:59 661 trans-pool-1-thread-3 DEBUG - SQL Preparing: SELECT integral FROM users WHERE id=? args: WrappedArray(JdbcValue(21))
+01-04 17:32:59 662 trans-pool-1-thread-3 DEBUG - SQL result: 0
+01-04 17:32:59 669 trans-pool-1-thread-3 DEBUG - SQL Preparing: UPDATE users SET integral=? WHERE id=? args: WrappedArray(JdbcValue(24), JdbcValue(21))
+01-04 17:32:59 709 trans-pool-1-thread-3 DEBUG - SQL result: 1
+01-04 17:32:59 710 trans-pool-1-thread-3 DEBUG - SQL Preparing: INSERT INTO integral_journal(user_id,
+                                         integral_type,
+                                         integral_price,
+                                         integral_source,
+                                         integral,
+                                         created_at,
+                                         created_by,
+                                         updated_at,
+                                         updated_by,
+                                         remark)
+                          VALUES (?,
+                                  ?,
+                                  ?,
+                                  ?,
+                                  ?,
+                                  now(),
+                                  1,
+                                  1,
+                                  1,
+                                  '') args: WrappedArray(JdbcValue(21), JdbcValue(1), JdbcValue(12), JdbcValue(1), JdbcValue(12))
+01-04 17:32:59 749 trans-pool-1-thread-3 ERROR - Data truncation: Incorrect datetime value: '1' for column 'updated_at' at row 1
+com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect datetime value: '1' for column 'updated_at' at row 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3845) ~[mysql-connector-java-5.1.37.jar:5.1.37]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3783) ~[mysql-connector-java-5.1.37.jar:5.1.37]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2447) ~[mysql-connector-java-5.1.37.jar:5.1.37]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2594) ~[mysql-connector-java-5.1.37.jar:5.1.37]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545) ~[mysql-connector-java-5.1.37.jar:5.1.37]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901) ~[mysql-connector-java-5.1.37.jar:5.1.37]
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2113) ~[mysql-connector-java-5.1.37.jar:5.1.37]
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2049) ~[mysql-connector-java-5.1.37.jar:5.1.37]
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2034) ~[mysql-connector-java-5.1.37.jar:5.1.37]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeUpdate(FilterChainImpl.java:2723) ~[druid-1.0.17.jar:1.0.17]
+	at com.alibaba.druid.filter.FilterAdapter.preparedStatement_executeUpdate(FilterAdapter.java:1069) ~[druid-1.0.17.jar:1.0.17]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_executeUpdate(FilterEventAdapter.java:491) ~[druid-1.0.17.jar:1.0.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeUpdate(FilterChainImpl.java:2721) ~[druid-1.0.17.jar:1.0.17]
+	at com.alibaba.druid.filter.FilterAdapter.preparedStatement_executeUpdate(FilterAdapter.java:1069) ~[druid-1.0.17.jar:1.0.17]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_executeUpdate(FilterEventAdapter.java:491) ~[druid-1.0.17.jar:1.0.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeUpdate(FilterChainImpl.java:2721) ~[druid-1.0.17.jar:1.0.17]
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.executeUpdate(PreparedStatementProxyImpl.java:158) ~[druid-1.0.17.jar:1.0.17]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeUpdate(DruidPooledPreparedStatement.java:253) ~[druid-1.0.17.jar:1.0.17]
+	at wangzx.scala_commons.sql.RichConnection.executeUpdateWithGenerateKey(RichConnection.scala:69) ~[scala-sql_2.12-2.0.0.jar:2.0.0]
+	at wangzx.scala_commons.sql.RichDataSource.$anonfun$executeUpdateWithGenerateKey$1(RichDataSource.scala:27) ~[scala-sql_2.12-2.0.0.jar:2.0.0]
+	at wangzx.scala_commons.sql.RichDataSource.$anonfun$executeUpdateWithGenerateKey$1$adapted(RichDataSource.scala:27) ~[scala-sql_2.12-2.0.0.jar:2.0.0]
+	at wangzx.scala_commons.sql.RichDataSource.withConnection(RichDataSource.scala:12) ~[scala-sql_2.12-2.0.0.jar:2.0.0]
+	at wangzx.scala_commons.sql.RichDataSource.executeUpdateWithGenerateKey(RichDataSource.scala:27) ~[scala-sql_2.12-2.0.0.jar:2.0.0]
+	at wangzx.scala_commons.sql.RichDataSource.executeUpdate(RichDataSource.scala:24) ~[scala-sql_2.12-2.0.0.jar:2.0.0]
+	at com.today.user.repository.UserRepository.insertIntegral_journal(UserRepository.scala:133) ~[classes/:na]
+	at com.today.user.UserServiceImpl.changeUserIntegral(UserServiceImpl.scala:366) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$changeUserIntegral.getResult(UserServiceCodec.scala:943) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$changeUserIntegral.getResult(UserServiceCodec.scala:933) ~[classes/:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.lambda$process$0(SoaCommonBaseProcessor.java:84) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.DispatchFilter.doFilter(DispatchFilter.java:27) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SlowTimeServiceFilter.doFilter(SlowTimeServiceFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.ProviderTimesFilter.doFilter(ProviderTimesFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SoaGlobalTransactionalFilter.doFilter(SoaGlobalTransactionalFilter.java:50) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.process(SoaCommonBaseProcessor.java:103) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.processRequest(SoaServerHandler.java:299) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.lambda$readRequestHeader$5(SoaServerHandler.java:130) ~[dapeng-container-1.3.0.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+01-04 17:36:36 986 Thread-8 INFO - {dataSource-1} inited
+01-04 17:36:49 186 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty request body:getServiceMetadata_args()
+01-04 17:36:49 190 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty request header:Optional.empty body:getServiceMetadata_args()
+01-04 17:36:49 203 trans-pool-1-thread-1 INFO - com.today.api.user.service.UserService 1.0.0 getServiceMetadata operatorId:Optional.empty operatorName:Optional.empty response body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26314)
+01-04 17:36:49 204 trans-pool-1-thread-1 DEBUG - com.today.api.user.service.UserService 1.0.0 getServiceMetadata Optional.empty response header:Optional.empty body:getServiceMetadata_result(<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today.api.user.service...(26314)
+01-04 17:37:18 354 trans-pool-1-thread-2 INFO - com.today.api.user.service.UserService 1.0.0 changeUserIntegral operatorId:Optional.empty operatorName:Optional.empty request body:changeUserIntegral_args(ChangeIntegralRequest(21,10,(1,增加流水),(1,完善个人资料)))
+01-04 17:37:18 354 trans-pool-1-thread-2 DEBUG - com.today.api.user.service.UserService 1.0.0 changeUserIntegral Optional.empty request header:Optional.empty body:changeUserIntegral_args(ChangeIntegralRequest(21,10,(1,增加流水),(1,完善个人资料)))
+01-04 17:37:18 425 trans-pool-1-thread-2 DEBUG - SQL Preparing: SELECT COUNT(*) FROM users WHERE id=? args: WrappedArray(JdbcValue(21))
+01-04 17:37:18 506 trans-pool-1-thread-2 DEBUG - SQL result: 0
+01-04 17:37:18 507 trans-pool-1-thread-2 DEBUG - SQL Preparing: SELECT status FROM users WHERE id=? args: WrappedArray(JdbcValue(21))
+01-04 17:37:18 507 trans-pool-1-thread-2 DEBUG - SQL result: 0
+01-04 17:37:18 508 trans-pool-1-thread-2 DEBUG - SQL Preparing: SELECT integral FROM users WHERE id=? args: WrappedArray(JdbcValue(21))
+01-04 17:37:18 509 trans-pool-1-thread-2 DEBUG - SQL result: 0
+01-04 17:37:18 514 trans-pool-1-thread-2 DEBUG - SQL Preparing: UPDATE users SET integral=? WHERE id=? args: WrappedArray(JdbcValue(34), JdbcValue(21))
+01-04 17:37:18 558 trans-pool-1-thread-2 DEBUG - SQL result: 1
+01-04 17:37:18 559 trans-pool-1-thread-2 DEBUG - SQL Preparing: INSERT INTO integral_journal(user_id,
+                                         integral_type,
+                                         integral_price,
+                                         integral_source,
+                                         integral,
+                                         created_at,
+                                         created_by,
+                                         updated_at,
+                                         updated_by,
+                                         remark)
+                          VALUES (?,
+                                  ?,
+                                  ?,
+                                  ?,
+                                  ?,
+                                  now(),
+                                  1,
+                                  now(),
+                                  0,
+                                  '') args: WrappedArray(JdbcValue(21), JdbcValue(1), JdbcValue(10), JdbcValue(1), JdbcValue(24))
+01-04 17:37:18 599 trans-pool-1-thread-2 DEBUG - SQL result: 1
+01-04 17:37:18 600 trans-pool-1-thread-2 INFO - com.today.api.user.service.UserService 1.0.0 changeUserIntegral operatorId:Optional.empty operatorName:Optional.empty response body:changeUserIntegral_result(1)
+01-04 17:37:18 600 trans-pool-1-thread-2 DEBUG - com.today.api.user.service.UserService 1.0.0 changeUserIntegral Optional.empty response header:Optional.empty body:changeUserIntegral_result(1)
+01-04 17:37:42 095 trans-pool-1-thread-3 INFO - com.today.api.user.service.UserService 1.0.0 changeUserIntegral operatorId:Optional.empty operatorName:Optional.empty request body:changeUserIntegral_args(ChangeIntegralRequest(21,10,(2,减少流水),(1,完善个人资料)))
+01-04 17:37:42 095 trans-pool-1-thread-3 DEBUG - com.today.api.user.service.UserService 1.0.0 changeUserIntegral Optional.empty request header:Optional.empty body:changeUserIntegral_args(ChangeIntegralRequest(21,10,(2,减少流水),(1,完善个人资料)))
+01-04 17:37:42 096 trans-pool-1-thread-3 DEBUG - SQL Preparing: SELECT COUNT(*) FROM users WHERE id=? args: WrappedArray(JdbcValue(21))
+01-04 17:37:42 097 trans-pool-1-thread-3 DEBUG - SQL result: 0
+01-04 17:37:42 097 trans-pool-1-thread-3 DEBUG - SQL Preparing: SELECT status FROM users WHERE id=? args: WrappedArray(JdbcValue(21))
+01-04 17:37:42 098 trans-pool-1-thread-3 DEBUG - SQL result: 0
+01-04 17:37:42 099 trans-pool-1-thread-3 DEBUG - SQL Preparing: SELECT integral FROM users WHERE id=? args: WrappedArray(JdbcValue(21))
+01-04 17:37:42 099 trans-pool-1-thread-3 DEBUG - SQL result: 0
+01-04 17:37:42 100 trans-pool-1-thread-3 DEBUG - SQL Preparing: UPDATE users SET integral=? WHERE id=? args: WrappedArray(JdbcValue(44), JdbcValue(21))
+01-04 17:37:42 131 trans-pool-1-thread-3 DEBUG - SQL result: 1
+01-04 17:37:42 132 trans-pool-1-thread-3 DEBUG - SQL Preparing: INSERT INTO integral_journal(user_id,
+                                         integral_type,
+                                         integral_price,
+                                         integral_source,
+                                         integral,
+                                         created_at,
+                                         created_by,
+                                         updated_at,
+                                         updated_by,
+                                         remark)
+                          VALUES (?,
+                                  ?,
+                                  ?,
+                                  ?,
+                                  ?,
+                                  now(),
+                                  1,
+                                  now(),
+                                  0,
+                                  '') args: WrappedArray(JdbcValue(21), JdbcValue(2), JdbcValue(10), JdbcValue(1), JdbcValue(34))
+01-04 17:37:42 162 trans-pool-1-thread-3 DEBUG - SQL result: 1
+01-04 17:37:42 163 trans-pool-1-thread-3 INFO - com.today.api.user.service.UserService 1.0.0 changeUserIntegral operatorId:Optional.empty operatorName:Optional.empty response body:changeUserIntegral_result(1)
+01-04 17:37:42 163 trans-pool-1-thread-3 DEBUG - com.today.api.user.service.UserService 1.0.0 changeUserIntegral Optional.empty response header:Optional.empty body:changeUserIntegral_result(1)
+01-04 17:37:44 189 trans-pool-1-thread-4 INFO - com.today.api.user.service.UserService 1.0.0 changeUserIntegral operatorId:Optional.empty operatorName:Optional.empty request body:changeUserIntegral_args(ChangeIntegralRequest(21,10,(2,减少流水),(1,完善个人资料)))
+01-04 17:37:44 189 trans-pool-1-thread-4 DEBUG - com.today.api.user.service.UserService 1.0.0 changeUserIntegral Optional.empty request header:Optional.empty body:changeUserIntegral_args(ChangeIntegralRequest(21,10,(2,减少流水),(1,完善个人资料)))
+01-04 17:37:44 190 trans-pool-1-thread-4 DEBUG - SQL Preparing: SELECT COUNT(*) FROM users WHERE id=? args: WrappedArray(JdbcValue(21))
+01-04 17:37:44 191 trans-pool-1-thread-4 DEBUG - SQL result: 0
+01-04 17:37:44 191 trans-pool-1-thread-4 DEBUG - SQL Preparing: SELECT status FROM users WHERE id=? args: WrappedArray(JdbcValue(21))
+01-04 17:37:44 192 trans-pool-1-thread-4 DEBUG - SQL result: 0
+01-04 17:37:44 193 trans-pool-1-thread-4 DEBUG - SQL Preparing: SELECT integral FROM users WHERE id=? args: WrappedArray(JdbcValue(21))
+01-04 17:37:44 193 trans-pool-1-thread-4 DEBUG - SQL result: 0
+01-04 17:37:44 194 trans-pool-1-thread-4 DEBUG - SQL Preparing: UPDATE users SET integral=? WHERE id=? args: WrappedArray(JdbcValue(54), JdbcValue(21))
+01-04 17:37:44 232 trans-pool-1-thread-4 DEBUG - SQL result: 1
+01-04 17:37:44 233 trans-pool-1-thread-4 DEBUG - SQL Preparing: INSERT INTO integral_journal(user_id,
+                                         integral_type,
+                                         integral_price,
+                                         integral_source,
+                                         integral,
+                                         created_at,
+                                         created_by,
+                                         updated_at,
+                                         updated_by,
+                                         remark)
+                          VALUES (?,
+                                  ?,
+                                  ?,
+                                  ?,
+                                  ?,
+                                  now(),
+                                  1,
+                                  now(),
+                                  0,
+                                  '') args: WrappedArray(JdbcValue(21), JdbcValue(2), JdbcValue(10), JdbcValue(1), JdbcValue(44))
+01-04 17:37:44 263 trans-pool-1-thread-4 DEBUG - SQL result: 1
+01-04 17:37:44 263 trans-pool-1-thread-4 INFO - com.today.api.user.service.UserService 1.0.0 changeUserIntegral operatorId:Optional.empty operatorName:Optional.empty response body:changeUserIntegral_result(1)
+01-04 17:37:44 263 trans-pool-1-thread-4 DEBUG - com.today.api.user.service.UserService 1.0.0 changeUserIntegral Optional.empty response header:Optional.empty body:changeUserIntegral_result(1)
+01-04 17:37:50 733 trans-pool-1-thread-5 INFO - com.today.api.user.service.UserService 1.0.0 changeUserIntegral operatorId:Optional.empty operatorName:Optional.empty request body:changeUserIntegral_args(ChangeIntegralRequest(21,15,(2,减少流水),(1,完善个人资料)))
+01-04 17:37:50 734 trans-pool-1-thread-5 DEBUG - com.today.api.user.service.UserService 1.0.0 changeUserIntegral Optional.empty request header:Optional.empty body:changeUserIntegral_args(ChangeIntegralRequest(21,15,(2,减少流水),(1,完善个人资料)))
+01-04 17:37:50 735 trans-pool-1-thread-5 DEBUG - SQL Preparing: SELECT COUNT(*) FROM users WHERE id=? args: WrappedArray(JdbcValue(21))
+01-04 17:37:50 736 trans-pool-1-thread-5 DEBUG - SQL result: 0
+01-04 17:37:50 737 trans-pool-1-thread-5 DEBUG - SQL Preparing: SELECT status FROM users WHERE id=? args: WrappedArray(JdbcValue(21))
+01-04 17:37:50 738 trans-pool-1-thread-5 DEBUG - SQL result: 0
+01-04 17:37:50 738 trans-pool-1-thread-5 DEBUG - SQL Preparing: SELECT integral FROM users WHERE id=? args: WrappedArray(JdbcValue(21))
+01-04 17:37:50 739 trans-pool-1-thread-5 DEBUG - SQL result: 0
+01-04 17:37:50 740 trans-pool-1-thread-5 DEBUG - SQL Preparing: UPDATE users SET integral=? WHERE id=? args: WrappedArray(JdbcValue(69), JdbcValue(21))
+01-04 17:37:50 773 trans-pool-1-thread-5 DEBUG - SQL result: 1
+01-04 17:37:50 774 trans-pool-1-thread-5 DEBUG - SQL Preparing: INSERT INTO integral_journal(user_id,
+                                         integral_type,
+                                         integral_price,
+                                         integral_source,
+                                         integral,
+                                         created_at,
+                                         created_by,
+                                         updated_at,
+                                         updated_by,
+                                         remark)
+                          VALUES (?,
+                                  ?,
+                                  ?,
+                                  ?,
+                                  ?,
+                                  now(),
+                                  1,
+                                  now(),
+                                  0,
+                                  '') args: WrappedArray(JdbcValue(21), JdbcValue(2), JdbcValue(15), JdbcValue(1), JdbcValue(54))
+01-04 17:37:50 800 trans-pool-1-thread-5 DEBUG - SQL result: 1
+01-04 17:37:50 801 trans-pool-1-thread-5 INFO - com.today.api.user.service.UserService 1.0.0 changeUserIntegral operatorId:Optional.empty operatorName:Optional.empty response body:changeUserIntegral_result(1)
+01-04 17:37:50 801 trans-pool-1-thread-5 DEBUG - com.today.api.user.service.UserService 1.0.0 changeUserIntegral Optional.empty response header:Optional.empty body:changeUserIntegral_result(1)
+01-04 17:38:10 936 trans-pool-1-thread-6 INFO - com.today.api.user.service.UserService 1.0.0 changeUserIntegral operatorId:Optional.empty operatorName:Optional.empty request body:changeUserIntegral_args(ChangeIntegralRequest(20,15,(2,减少流水),(1,完善个人资料)))
+01-04 17:38:10 936 trans-pool-1-thread-6 DEBUG - com.today.api.user.service.UserService 1.0.0 changeUserIntegral Optional.empty request header:Optional.empty body:changeUserIntegral_args(ChangeIntegralRequest(20,15,(2,减少流水),(1,完善个人资料)))
+01-04 17:38:10 937 trans-pool-1-thread-6 DEBUG - SQL Preparing: SELECT COUNT(*) FROM users WHERE id=? args: WrappedArray(JdbcValue(20))
+01-04 17:38:10 937 trans-pool-1-thread-6 DEBUG - SQL result: 0
+01-04 17:38:10 938 trans-pool-1-thread-6 DEBUG - SQL Preparing: SELECT status FROM users WHERE id=? args: WrappedArray(JdbcValue(20))
+01-04 17:38:10 939 trans-pool-1-thread-6 DEBUG - SQL result: 0
+01-04 17:38:10 946 trans-pool-1-thread-6 ERROR - 非法用户
+java.lang.RuntimeException: 非法用户
+	at com.today.user.UserServiceImpl.preCheckStatus(UserServiceImpl.scala:377) ~[classes/:na]
+	at com.today.user.UserServiceImpl.changeUserIntegral(UserServiceImpl.scala:362) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$changeUserIntegral.getResult(UserServiceCodec.scala:943) ~[classes/:na]
+	at com.today.api.user.UserServiceCodec$changeUserIntegral.getResult(UserServiceCodec.scala:933) ~[classes/:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.lambda$process$0(SoaCommonBaseProcessor.java:84) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.DispatchFilter.doFilter(DispatchFilter.java:27) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SlowTimeServiceFilter.doFilter(SlowTimeServiceFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.ProviderTimesFilter.doFilter(ProviderTimesFilter.java:29) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.filter.SoaGlobalTransactionalFilter.doFilter(SoaGlobalTransactionalFilter.java:50) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.filter.container.ContainerFilterChain.doFilter(ContainerFilterChain.java:35) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.core.SoaCommonBaseProcessor.process(SoaCommonBaseProcessor.java:103) ~[dapeng-core-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.processRequest(SoaServerHandler.java:299) ~[dapeng-container-1.3.0.jar:na]
+	at com.isuwang.dapeng.container.netty.SoaServerHandler.lambda$readRequestHeader$5(SoaServerHandler.java:130) ~[dapeng-container-1.3.0.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]

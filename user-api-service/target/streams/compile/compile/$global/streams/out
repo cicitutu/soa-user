@@ -1,4 +1,6 @@
-[error] H:\IdeaProjects\userDemo\user-api\user-api-service\src\main\scala\com\today\user\repository\UserRepository.scala:30:47: could not find implicit value for evidence parameter of type wangzx.scala_commons.sql.ResultSetMapper[com.today.api.user.response.LoginUserResponse]
-[error]     val l = dataSource.rows[LoginUserResponse](sql"""SELECT * FROM users WHERE telephone=${users.telephone} AND password=${users.passWord}""")
-[error]                                               ^
+[error] H:\IdeaProjects\userDemo\user-api\user-api-service\src\main\scala\com\today\user\repository\UserRepository.scala:118:44: missing argument list for method executeUpdateWithGenerateKey in class RichDataSource
+[error] Unapplied methods are only converted to functions when a function type is expected.
+[error] You can make this conversion explicit by writing `executeUpdateWithGenerateKey _` or `executeUpdateWithGenerateKey(_)(_)` instead of `executeUpdateWithGenerateKey`.
+[error]     dataSource.executeUpdateWithGenerateKey(
+[error]                                            ^
 [error] one error found

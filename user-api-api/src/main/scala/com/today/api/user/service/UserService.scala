@@ -1,7 +1,7 @@
 
         package com.today.api.user.service
 
-        import com.isuwang.dapeng.core.{Processor, Service}
+import com.isuwang.dapeng.core.{Processor, Service}
         import com.isuwang.dapeng.core.SoaGlobalTransactional
 
         /**

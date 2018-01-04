@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: com.isuwang:dapeng-transaction-api:1.3.0:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.isuwang/dapeng-transaction-api/jars/dapeng-transaction-api-1.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.isuwang/dapeng-transaction-api/srcs/dapeng-transaction-api-1.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

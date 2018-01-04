@@ -1,6 +1,6 @@
 package com.today.api.user
 
-        import com.isuwang.dapeng.core._
+import com.isuwang.dapeng.core._
         import com.isuwang.org.apache.thrift._
         import com.isuwang.dapeng.remoting.BaseCommonServiceClient
         import com.today.api.user.UserServiceCodec._

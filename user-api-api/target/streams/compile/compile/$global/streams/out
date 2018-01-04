@@ -1,0 +1,4 @@
+[error] H:\IdeaProjects\userDemo\user-api\user-api-api\src\main\scala\com\today\api\user\request\serializer\ModifyUserRequestSerializer.scala:25:23: an expression of type Null is ineligible for implicit conversion
+[error]         var id: Int = null
+[error]                       ^
+[error] one error found
