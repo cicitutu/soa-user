@@ -1,6 +1,4 @@
-[error] H:\IdeaProjects\userDemo\user-api\user-api-service\src\main\scala\com\today\user\repository\UserRepository.scala:118:44: missing argument list for method executeUpdateWithGenerateKey in class RichDataSource
-[error] Unapplied methods are only converted to functions when a function type is expected.
-[error] You can make this conversion explicit by writing `executeUpdateWithGenerateKey _` or `executeUpdateWithGenerateKey(_)(_)` instead of `executeUpdateWithGenerateKey`.
-[error]     dataSource.executeUpdateWithGenerateKey(
-[error]                                            ^
-[error] one error found
+[warn] G:\IdeaProjects\userDemo\user-api\user-api-service\src\main\scala\com\today\user\UserServiceImpl.scala:376:37: Option[Int] and Int are unrelated: they will most likely never compare equal
+[warn]     if(userRepository.findId(userId)==0){
+[warn]                                     ^
+[warn] one warning found

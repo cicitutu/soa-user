@@ -19,6 +19,8 @@
     <bean id="userService" class="com.today.user.UserServiceImpl"/>
     <soa:service ref="userService"/>
 
+    <bean id="userRepository" class="com.today.user.repository.UserRepository"/>
+
     <bean id="slf4j-filter" class="com.alibaba.druid.filter.logging.Slf4jLogFilter">
         <property name="statementExecutableSqlLogEnable" value="true"/>
     </bean>

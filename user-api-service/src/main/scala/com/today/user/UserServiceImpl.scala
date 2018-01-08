@@ -2,7 +2,8 @@ package com.today.user
 
 import java.util.Date
 
-import com.today.api.user.enums.UserStatusEnum
+import com.isuwang.dapeng.core.{SoaBaseCode, SoaException}
+import com.today.api.user.enums.{IntegralSourceEnum, IntegralTypeEnum, UserStatusEnum}
 import com.today.api.user.request._
 import com.today.api.user.response._
 import com.today.api.user.service.UserService
@@ -11,10 +12,11 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
 
 object UserServiceImpl {
-  val IS_TELEPHONE = """1(([3,5,8]\d{9})|(4[5,7]\d{8})|(7[0,6-8]\d{8}))""".r
+  val IS_TELEPHONE = "^1(3[0-9]|4[57]|5[0-35-9]|7[01678]|8[0-9])\\d{8}$".r
   val IS_PASSWORD = """^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,16}$""".r
   val IS_EMAIL = """^(\w)+(\.\w+)*@(\w)+((\.\w{2,3}){1,3})$""".r
   val IS_QQ = """\d{4,12}""".r
+  val Integral = 10
 }
 
 @Component
@@ -62,34 +64,30 @@ class UserServiceImpl extends UserService {
     *
     **/
   override def registerUser(request: RegisterUserRequest): RegisterUserResponse = {
-    if (preCheckRegisterUser(request)) {
-      userRepository.insertUser(RegisterUserRequest(request.userName,request.passWord,request.telephone))
-      RegisterUserResponse(request.userName, request.telephone, UserStatusEnum.ACTIVATED, new Date().getTime)
-    }
-    else null
+    //检查
+    preCheck(request)
+
+    //注册
+    userRepository.insertUser(RegisterUserRequest(request.userName,request.passWord,request.telephone))
+
+    //响应
+    RegisterUserResponse(request.userName, request.telephone, UserStatusEnum.ACTIVATED, new Date().getTime)
   }
 
-  def preCheckRegisterUser(request: RegisterUserRequest): Boolean = {
-    val userName = request.userName
-    val passWord = request.passWord
-    val telephone = request.telephone
+  /**前置检查*/
+  def preCheck(register: RegisterUserRequest)={
+    //判断名字是否存在
+    assert(userRepository.findName(register.userName).getOrElse(0) == 0,"你输入的名字已经存在")
+
+    //密码规则验证
+    assert(IS_PASSWORD.findFirstIn(register.passWord).nonEmpty,"密码输入不合法")
+
+    //手机号有没有被使用验证
+    assert(userRepository.findTelephone(register.telephone).getOrElse(1) <=0  , "号码被使用")
 
     //手机号码规则验证
-    IS_TELEPHONE.findFirstIn(telephone) match {
-      case None => throw new RuntimeException("号码输入不合法")
-      case _ => true
-    }
-    //手机号有没有被使用验证
-    if (userRepository.findTelephone(telephone) >= 1)
-      throw new RuntimeException("号码被使用")
-    //密码规则验证
-    IS_PASSWORD.findFirstIn(passWord) match {
-      case None => throw new RuntimeException("密码输入不正确")
-      case _ => true
-    }
-    if (userName == null) throw new RuntimeException("名字必须填")
+    assert(IS_TELEPHONE.findFirstIn(register.telephone).nonEmpty,"号码输入不合法")
 
-    true
   }
 
   /**
@@ -127,36 +125,37 @@ class UserServiceImpl extends UserService {
     *
     **/
   override def login(request: LoginUserRequest)={
-    if(preCheckLogin(request)){
-      val user = userRepository.findUserByTelephoneAndPassword(request)
-      println(user.status)
-      if(user.status==1||user.status==2){
-        LoginUserResponse(user.userName,user.telephone,UserStatusEnum(user.status),user.integral,user.createdAt.getTime,user.updatedAt.getTime,user.email,user.qq)
-      }else{
-        throw new RuntimeException("您的账号有问题，请联系管理员")
-      }
-    }else{
-      throw new RuntimeException("账号或者密码错误")
+    //前置检查
+    preCheckLogin(request)
+
+    //查找用户
+    val user = userRepository.findUserByTelephoneAndPassword(request)
+
+    assert(user.isDefined , "手机或者密码不正确")
+
+    //响应请求
+    user.get.status match {
+      case 1|2 => LoginUserResponse(user.get.userName,
+                                    user.get.telephone,
+                                    UserStatusEnum(user.get.status),
+                                    user.get.integral,
+                                    user.get.createdAt.getTime,
+                                    user.get.updatedAt.getTime,
+                                    user.get.email,
+                                    user.get.qq)
+      case _ => throw new SoaException(SoaBaseCode.NotNull,"你的账号有问题，联系管理员")
     }
+
   }
 
-  def preCheckLogin(request: LoginUserRequest) = {
-    val passWord = request.passWord
-    val telephone = request.telephone
-    //手机号码规则验证
-    IS_TELEPHONE.findFirstIn(telephone) match {
-      case None => throw new RuntimeException("号码输入不合法")
-      case _ => true
-    }
-    //手机号有没有被使用验证
-    if (userRepository.findTelephone(telephone) >= 1)
-      throw new RuntimeException("号码被使用")
+  def preCheckLogin(login: LoginUserRequest) = {
+
     //密码规则验证
-    IS_PASSWORD.findFirstIn(passWord) match {
-      case None => throw new RuntimeException("密码输入不正确")
-      case _ => true
-    }
-    true
+    assert(IS_PASSWORD.findFirstIn(login.passWord).nonEmpty,"密码输入不合法")
+
+    //手机号码规则验证
+    assert(IS_TELEPHONE.findFirstIn(login.telephone).nonEmpty,"号码输入不合法")
+
   }
   /**
     *
@@ -195,30 +194,35 @@ class UserServiceImpl extends UserService {
     *
     **/
   override def modifyUser(request: ModifyUserRequest): ModifyUserResponse = {
-    if(preCheckModifyUser(request)){
-      val user = userRepository.findUserById(request)
-      userRepository.updateUserEmailAndQQ(ModifyUserRequest(request.userId,request.email,request.qq))
-      ModifyUserResponse(user.userName,user.telephone,UserStatusEnum(user.status),user.updatedAt.getTime)
+    //前置检查
+    preCheckModifyUser(request)
+    assert(userRepository.findUserById(request).nonEmpty,throw new SoaException(SoaBaseCode.UnKnown,"输入错误，ID不存在"))
+
+    //跟新信息
+    val user = userRepository.findUserById(request)
+      user.get.status match {
+      case 1|2 => userRepository.updateUserEmailAndQQ(ModifyUserRequest(request.userId,request.email,request.qq))
+      case _ => throw new SoaException(SoaBaseCode.NotNull,"你的账号有问题，联系管理员")
     }
-    else null
+
+    //跟新积分
+    changeUserIntegral(ChangeIntegralRequest(userId = request.userId,
+                       integralPrice = Integral.toString,
+                       integralType = IntegralTypeEnum.ADD,
+                       integralSource =IntegralSourceEnum.PREFECT_INFORMATION))
+
+    //相应请求
+    ModifyUserResponse(user.get.userName,user.get.telephone,UserStatusEnum(user.get.status),
+      user.get.updatedAt.getTime,user.get.email,user.get.qq)
+
   }
 
   def preCheckModifyUser(request:ModifyUserRequest)={
-    IS_EMAIL.findFirstIn(request.email) match {
-      case None => throw new RuntimeException("邮箱输入错误")
-      case _ => true
-    }
-    IS_QQ.findFirstIn(request.qq) match {
-      case None => throw new RuntimeException("QQ输入不合法")
-      case _ => true
-    }
-    val st = userRepository.findUserById(request).status
-    st match {
-      case 1 => true
-      case 2 => true
-      case _ => throw new RuntimeException("您的账号存在问题，请联系管理员")
-    }
-    true
+
+    assert(IS_EMAIL.findFirstIn(request.email).nonEmpty, "邮箱输入错误")
+
+    assert(IS_QQ.findFirstIn(request.qq).nonEmpty,"QQ输入不合法" )
+
   }
   /**
     *
@@ -253,23 +257,24 @@ class UserServiceImpl extends UserService {
     *
     **/
   override def freezeUser(request: FreezeUserRequest): FreezeUserResponse = {
-    if(preCheckFreezeUser(request)){
-      val user = userRepository.findUnFreezeUserById(request)
-      userRepository.updateUserStatusFreeze(FreezeUserRequest(request.userId,request.remark))
-      FreezeUserResponse(user.userId,UserStatusEnum(user.status),user.remark)
+    //前置检查
+    preCheckFreezeUser(request)
+
+    //跟新信息
+    val user = userRepository.findUnFreezeUserById(request).head
+    user.status match {
+      case 1|2 => userRepository.updateUserStatusFreeze(FreezeUserRequest(request.userId,request.remark))
+      case _ => throw new SoaException(SoaBaseCode.UnKnown,"已冻结,已拉黑,已逻辑删除的用户不能冻结")
     }
-    else null
+
+    //响应请求
+    FreezeUserResponse(user.userId,UserStatusEnum(user.status),user.remark)
+
   }
   def preCheckFreezeUser(request: FreezeUserRequest)={
-    if(userRepository.findId(request.userId)==0){
-      throw new RuntimeException("没有这个ID的账号")
-    }
-    val st = userRepository.findUnFreezeUserById(request).status
-    st match {
-      case 1 => true
-      case 2 => true
-      case _ => throw new RuntimeException("已冻结,已拉黑,已逻辑删除的用户不能冻结")
-    }
+
+    assert(userRepository.findId(request.userId).nonEmpty,throw new SoaException(SoaBaseCode.UnKnown,"输入错误，ID不存在"))
+
   }
 
   /**
@@ -306,23 +311,24 @@ class UserServiceImpl extends UserService {
     *
     **/
   override def blackUser(request: BlackUserRequest): BlackUserResponse = {
-    if(preCheckBlackUser(request)){
-      val user = userRepository.findUnBlackUserById(request)
-      userRepository.updateUserStatusBlack(BlackUserRequest(request.userId,request.remark))
-      BlackUserResponse(user.userId,UserStatusEnum(user.status),user.remark)
+    //前置检查
+    preCheckBlackUser(request)
+
+    //跟新信息
+    val user = userRepository.findUnBlackUserById(request).head
+    user.status match {
+      case 1|2 => userRepository.updateUserStatusBlack(BlackUserRequest(request.userId,request.remark))
+      case _ => throw new SoaException(SoaBaseCode.UnKnown,"已冻结,已拉黑,已逻辑删除的用户不能冻结")
     }
-    else null
+
+    //响应请求
+    BlackUserResponse(user.userId,UserStatusEnum(user.status),user.remark)
+
   }
   def preCheckBlackUser(request: BlackUserRequest)={
-    if(userRepository.findId(request.userId)==0){
-      throw new RuntimeException("没有这个ID的账号")
-    }
-    val st = userRepository.findUnBlackUserById(request).status
-    st match {
-      case 1 => true
-      case 2 => true
-      case _ => throw new RuntimeException("已冻结,已拉黑,已逻辑删除的用户不能拉黑")
-    }
+
+    assert(userRepository.findId(request.userId).nonEmpty,throw new SoaException(SoaBaseCode.UnKnown,"输入错误，ID不存在"))
+
   }
 
   /**
@@ -359,23 +365,23 @@ class UserServiceImpl extends UserService {
     *
     **/
   override def changeUserIntegral(request: ChangeIntegralRequest): Int = {
-    if(preCheckStatus(request.userId)){
-      val integral = userRepository.findIntegralById(request.userId).get
-      val totalIntegral = request.integralPrice.toInt + integral
-      userRepository.updateIntegralById(request.userId,totalIntegral)
-      userRepository.insertIntegral_journal(request,integral)
-    } else throw new RuntimeException("系统错误")
+    //前置检查
+    preCheckStatus(request.userId)
+
+    //跟新信息
+    userRepository.findStatusById(request.userId).get match {
+      case 1|2 => val integral = userRepository.findIntegralById(request.userId).get
+                  val totalIntegral = request.integralPrice.toInt + integral
+                  userRepository.updateIntegralById(request.userId,totalIntegral)
+                  userRepository.insertIntegral_journal(request,integral)
+      case _ => throw new SoaException(SoaBaseCode.UnKnown,"非法用户")
+    }
+
   }
   def preCheckStatus(userId:String)={
-    if(userRepository.findId(userId)==0){
-      throw new RuntimeException("没有这个ID的账号")
-    }
-    val status = userRepository.findStatusById(userId).getOrElse(-1)
-    status match {
-      case 1 => true
-      case 2 => true
-      case _ => throw new RuntimeException("非法用户")
-    }
+
+    assert(userRepository.findId(userId).nonEmpty,throw new SoaException(SoaBaseCode.UnKnown,"输入错误，ID不存在"))
+
   }
 
 }
